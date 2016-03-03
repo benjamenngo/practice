@@ -1,0 +1,95 @@
+#container{
+ width: 80%;
+ margin-left: 10%;  
+ /*Making it into a flexbox*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Contains the NPower logo (header) and social media*/
+#toparea{
+  display: inherit;
+}
+#header{
+    width: 80%;
+}
+#socialMedia{
+  
+  border: 1px solid black;
+}
+
+/*------------------------Navigation Section-------------------------*/
+nav{
+    margin: 0;
+	margin-top:100px;
+	display: inherit;
+	flex-direction: row;
+	padding: 10px;
+}
+
+ul{
+  /*Makes it a flexchild*/
+    display:  inherit;
+	flex-wrap: wrap;
+	overflow: hidden;
+	list-style-type: none;
+	justify-content: flex-start;
+	flex-direction: row;
+  
+}
+
+
+li a{
+ 	text-decoration: none;
+	display: inherit;
+    padding: 15px;
+    border: 1px solid black;
+    list-style-type:  none;
+	text-align: center;
+}
+
+li a:hover{
+	color: yellow;
+}
+li a:active{
+  color:red;
+}
+li a:link{
+  color:black;
+}
+
+/*---------------------------Banner Section---------------------------*/
+#banner{
+  display: inherit;
+  height: 300px;
+  font-size: 100px;
+  border: 1px solid black;
+  width:  100%;
+}
+
+/*----------------------------------Main Section--------------------*/
+article{
+  display: inherit;
+}
+footer{
+	padding: 20px;
+	border: 1px solid black;
+	margin-left: -9px;
+	margin-right: -9px;
+}
+@media screen and (max-width: 900px)  {
+  ul { 
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  border: 0px;
+  }
+  #toparea{
+    flex-direction: column;
+  }
+}
+/* npowerblue #37b8eb*/
