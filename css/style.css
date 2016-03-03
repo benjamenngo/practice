@@ -1,6 +1,10 @@
+#npowerlogo {
+	width:30%;
+	height:30%;
+}
 #container{
- width: 80%;
- margin-left: 10%;  
+/*  width: 80%;
+ margin-left: 10%; */
  /*Making it into a flexbox*/
   display: -webkit-box;
   display: -moz-box;
@@ -13,22 +17,26 @@
 /*Contains the NPower logo (header) and social media*/
 #toparea{
   display: inherit;
+  background:skyblue;
 }
 #header{
     width: 80%;
+	background:skyblue;
 }
 #socialMedia{
   
   border: 1px solid black;
+  float:right;
 }
 
 /*------------------------Navigation Section-------------------------*/
 nav{
     margin: 0;
-	margin-top:100px;
+	margin-top:0px;
 	display: inherit;
 	flex-direction: row;
 	padding: 10px;
+	background:skyblue;
 }
 
 ul{
@@ -39,6 +47,7 @@ ul{
 	list-style-type: none;
 	justify-content: flex-start;
 	flex-direction: row;
+	background:skyblue;
   
 }
 
@@ -50,6 +59,7 @@ li a{
     border: 1px solid black;
     list-style-type:  none;
 	text-align: center;
+	background:skyblue;
 }
 
 li a:hover{
@@ -74,12 +84,14 @@ li a:link{
 /*----------------------------------Main Section--------------------*/
 article{
   display: inherit;
+  margin: 3% 10%
 }
 footer{
 	padding: 20px;
 	border: 1px solid black;
 	margin-left: -9px;
 	margin-right: -9px;
+	background:skyblue;
 }
 @media screen and (max-width: 900px)  {
   ul { 
