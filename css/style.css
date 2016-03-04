@@ -19,6 +19,7 @@ body {/*dont look here*/
 	display: inherit;
 	background:skyblue;
 	flex-direction: row;
+	justify-content: space-between;
 	border: 1px solid red;
 }
 header{
