@@ -1,13 +1,10 @@
-body {
+body {/*dont look here*/
 	margin: 0;
 }
 #npowerlogo {
-	width:30%;
-	height:30%;
+/*	width:35%;*/
 }
 #container{
-/*  width: 80%;
- margin-left: 10%; */
  /*Making it into a flexbox*/
   display: -webkit-box;
   display: -moz-box;
@@ -19,36 +16,43 @@ body {
 
 /*Contains the NPower logo (header) and social media*/
 #toparea{
-  display: inherit;
-  background:skyblue;
-	justify-content:flex-end;
+	display: inherit;
+	background:skyblue;
+	flex-direction: row;
 	border: 1px solid red;
 }
 header{
-	margin:0;
+	
+	
+	margin:0px;
 	background:skyblue;
-	justify-content:flex-start;
+
 	border: 1px solid black;	
 }
-header a {
+header a{
 	padding: 0px;
-	margin: 0px;
+	
+	
+}
+
 	
 }
 #socialMedia{
 	display:inherit;
-	margin:50px;
-  border: 1px solid black;
-  justify-content:flex-end;
-  flex-direction:row;
+	justify-content: flex-end;
+	border: 10px solid green;
+  
+
   
 }
 
 /*------------------------Navigation Section-------------------------*/
 nav{
+	
     margin: 0;
 	margin-top:0px;
 	display: inherit;
+	
 	flex-direction: row;
 	padding: 10px;
 	background:skyblue;
@@ -58,10 +62,11 @@ nav{
 ul{
   /*Makes it a flexchild*/
     display:  inherit;
+	
 	flex-wrap: wrap;
 	overflow: hidden;
 	list-style-type: none;
-	justify-content: flex-start;
+	
 	flex-direction: row;
 	background:skyblue;
   
@@ -90,17 +95,17 @@ li a:link{
 
 /*---------------------------Banner Section---------------------------*/
 #banner{
-  display: inherit;
-  height: 300px;
-  font-size: 100px;
-  border: 1px solid black;
-  width:  100%;
+	display: inherit;
+	height: 300px;
+	font-size: 100px;
+	border: 1px solid black;
+	width:  100%;
 }
 
 /*----------------------------------Main Section--------------------*/
 article{
-  display: inherit;
-  margin: 3% 10%
+	display: inherit;
+	margin: 3% 10%
 }
 footer{
 	padding: 20px;
@@ -109,7 +114,7 @@ footer{
 	margin-right: -9px;
 	background:skyblue;
 }
-@media screen and (max-width: 900px)  {
+/*@media screen and (max-width: 900px)  {
   ul { 
   flex-direction: column;
   width: 100%;
@@ -120,4 +125,5 @@ footer{
     flex-direction: column;
   }
 }
+*/
 /* npowerblue #37b8eb*/
