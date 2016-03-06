@@ -1,8 +1,8 @@
-body {/*dont look here*/
+body {
 	margin: 0;
 }
 #npowerlogo {
-/*	width:35%;*/
+
 }
 #container{
  /*Making it into a flexbox*/
@@ -19,7 +19,7 @@ body {/*dont look here*/
 	display: inherit;
 	background:skyblue;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-between; /*puts space inbetween the socialmedia links and the npower logo*/
 	border: 1px solid red;
 }
 header{
@@ -36,7 +36,7 @@ header a{
 	
 }
 
-	
+/*----------------------Social Media Links-------------------------*/	
 }
 #socialMedia{
 	display:inherit;
@@ -49,8 +49,7 @@ header a{
 
 /*------------------------Navigation Section-------------------------*/
 nav{
-	
-    margin: 0;
+	margin: 0;
 	margin-top:0px;
 	display: inherit;
 	
@@ -62,15 +61,13 @@ nav{
 
 ul{
   /*Makes it a flexchild*/
-    display:  inherit;
-	
+    	display:  inherit;
 	flex-wrap: wrap;
 	overflow: hidden;
 	list-style-type: none;
-	
 	flex-direction: row;
 	background:skyblue;
-  
+	
 }
 
 
@@ -115,7 +112,8 @@ footer{
 	margin-right: -9px;
 	background:skyblue;
 }
-/*@media screen and (max-width: 900px)  {
+/*------------Width of screen is less than 900px it will have these properties---------*/
+@media screen and (max-width: 900px)  {
   ul { 
   flex-direction: column;
   width: 100%;
@@ -126,5 +124,5 @@ footer{
     flex-direction: column;
   }
 }
-*/
+
 /* npowerblue #37b8eb*/
