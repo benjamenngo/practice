@@ -143,9 +143,11 @@ footer{
 }
 
 #footertext {
-left:30 px;
-
+	left: 58px;
+	height:20px; 
+	width:300px;
 }
+
 
 
 #texta {
