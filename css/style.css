@@ -141,6 +141,32 @@ footer{
 	margin-right: -9px;
 	background:skyblue;
 }
+
+#footertext {
+left:30 px;
+
+}
+
+
+#texta {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	width: 500px;
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
 /*------------Width of screen is less than 900px it will have these properties---------*/
 @media screen and (max-width: 900px)  {
   ul { 
