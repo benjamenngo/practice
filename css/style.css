@@ -1,14 +1,14 @@
 background{
 	
 	background:white
-	width:400px
-	height:400px;		
+	width:1000px
+	height:1000px;		
 }
 
 body {
 	margin: 0;
-	width:100px;
-	height:100px
+	width:500px;
+	height:500px
 	background:white
 	border: 3px solid black;
      }
@@ -110,6 +110,24 @@ li a:link{
 	border: 1px solid black;
 	width:  100%;
 }
+
+
+#bannerpic{
+background: url(../images/banner.png);
+	  position: absolute;
+	  width: 500px;
+	  height: 438px;
+	  margin: -25px;
+	  left: 130px;
+	  top: 42px;
+	  -ms-transform: rotate(2deg);
+	  -webkit-transform: rotate(2deg);
+	  transform: rotate(2deg);
+}
+
+
+
+
 
 /*----------------------------------Main Section--------------------*/
 article{
