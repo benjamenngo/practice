@@ -7,18 +7,21 @@ body {
 #container{
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
-	border: 1px solid blue;
+	/*vh is the viewport which is the browser window size*/
+	/*this makes the container 100% of the window*/
+	min-height: 100vh; 
+	
+	
 }
 /*-------------------Top Area---------------------*/
 #toparea{
 	display: inherit;
+	/*space-between, spaces the elements apart equally, in this case the logo and the social media*/
 	justify-content: space-between;
-	border: 1px solid blue;
 	flex-wrap: wrap;
+	background: skyblue;
 }
 #socialMedia{
-	border: 1px solid blue;
 	
 }
 	
@@ -33,7 +36,7 @@ body {
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn: hover, .dropbtn:focus {
     background-color: #3e8e41;
 }
 
@@ -117,27 +120,36 @@ li a:link{
 }
 /*--------------Main Section-------------------*/
 section{
-	border: 1px solid blue;
 	display: inherit;
-	flex: 1 auto;
+	flex: 1;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top: 2em;
+	align-items: center;
+	justify-content: center;
 }
-article img{
-	
-	border: 1px solid blue;
+#banner img{
 	border-radius: 50%;
-	
-	
+		
 }
 /*---------------Content Area-----------------*/
 #content{
-	border: 1px solid blue;
-	width: 60%
+	display: inherit;
+	flex-direction: column;
+	flex: 1 600px;
+	overflow: auto;
+	align-items: center;
+	
 }
 /*--------------Footer Section----------------*/
 footer{
-	border: 1px solid blue;
+	display: inherit;
+	flex-direction: column;
+	background: skyblue;
+	
+}
+#footCont{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
