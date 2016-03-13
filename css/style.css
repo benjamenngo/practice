@@ -1,84 +1,101 @@
-background{
-	
-	background:white
-	width:1000px
-	height:1000px;		
-}
-
+/*------------------Body Section------------------*/
 body {
+	height: 100%;
 	margin: 0;
-	width:500px;
-	height:500px
-	background:white
-	border: 3px solid black;
-     }
-#npowerlogo {
-
 }
+/*----------------Container Section---------------*/
 #container{
- /*Making it into a flexbox*/
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	/*vh is the viewport which is the browser window size*/
+	/*this makes the container 100% of the window*/
+	min-height: 100vh; 
+	
+	
 }
-
-/*Contains the NPower logo (header) and social media*/
+/*-------------------Top Area---------------------*/
 #toparea{
 	display: inherit;
-	background:skyblue;
-	flex-direction: row;
-	justify-content: space-between; /*puts space inbetween the socialmedia links and the npower logo*/
-	border: 1px solid red;
-}
-header{
-	
-	
-	margin:0px;
-	background:skyblue;
-
-	border: 1px solid black;	
-}
-header a{
-	padding: 0px;
-	
-	
-}
-
-/*----------------------Social Media Links-------------------------*/	
+	/*space-between, spaces the elements apart equally, in this case the logo and the social media*/
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background: skyblue;
 }
 #socialMedia{
-	display:inherit;
-	justify-content: flex-end;
-	border: 10px solid green;
-  
-
-  
-}
-
-/*------------------------Navigation Section-------------------------*/
-nav{
-	margin: 0;
-	margin-top:0px;
-	display: inherit;
 	
-	flex-direction: row;
-	padding: 10px;
-	background:skyblue;
-	justify-content:flex-end;
 }
+	
+/*---------------Navigation Section----------------*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn: hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
 
 ul{
   /*Makes it a flexchild*/
-    	display:  inherit;
+    display:  inherit;
+	
 	flex-wrap: wrap;
 	overflow: hidden;
 	list-style-type: none;
+	
 	flex-direction: row;
 	background:skyblue;
-	
+  
 }
 
 
@@ -101,85 +118,38 @@ li a:active{
 li a:link{
   color:black;
 }
-
-/*---------------------------Banner Section---------------------------*/
-#banner{
+/*--------------Main Section-------------------*/
+section{
 	display: inherit;
-	height: 300px;
-	font-size: 100px;
-	border: 1px solid black;
-	width:  100%;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
 }
-
-
-#bannerpic{
-background: url(../images/banner.png);
-	  position: absolute;
-	  width: 500px;
-	  height: 438px;
-	  margin: -25px;
-	  left: 130px;
-	  top: 42px;
-	  -ms-transform: rotate(2deg);
-	  -webkit-transform: rotate(2deg);
-	  transform: rotate(2deg);
+#banner img{
+	border-radius: 50%;
+		
 }
-
-
-
-
-
-/*----------------------------------Main Section--------------------*/
-article{
+/*---------------Content Area-----------------*/
+#content{
 	display: inherit;
-	margin: 3% 10%
+	flex-direction: column;
+	flex: 1 600px;
+	overflow: auto;
+	align-items: center;
+	
 }
+/*--------------Footer Section----------------*/
 footer{
-	padding: 20px;
-	border: 1px solid black;
-	margin-left: -9px;
-	margin-right: -9px;
-	background:skyblue;
+	display: inherit;
+	flex-direction: column;
+	background: skyblue;
+	
 }
-
-#footertext {
-	left: 58px;
-	height:20px; 
-	width:300px;
+#footCont{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
-
-
-
-#texta {
-	position: absolute;
-	top: 0px;
-	left: 20px;
-	width: 500px;
-	-ms-transform: rotate(0deg);
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-
-
-
-
-
-
-
-
-
-
-/*------------Width of screen is less than 900px it will have these properties---------*/
-@media screen and (max-width: 900px)  {
-  ul { 
-  flex-direction: column;
-  width: 100%;
-  padding: 0px;
-  border: 0px;
-  }
-  #toparea{
-    flex-direction: column;
-  }
-}
-
-/* npowerblue #37b8eb*/

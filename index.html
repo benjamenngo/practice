@@ -1,35 +1,51 @@
 <!doctype html><!--Team babaV's AWESOME WINNING WEBSITE!-->
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
     <title>NPower Canada</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet">
-  </head>
+	<script src="js/interact.js"></script>
+</head>
   
-  <body>
+<body>
     <div id="container">
     
       <!--Created a div to contain the entire header to make it a flexbox-->
 		
       <div id="toparea">
-
            <header>
             <!-- logo -->
-             
               <a href="#">
                	<img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
               </a>
+			  <p><small>Slogan here here here Slogan</small></p>
            </header>
         
-            <div id="socialMedia">
-              <!--Logos for all social media and donate-->
-            social media
-            </div>
-        
-      </div>  
+          <div id="socialMedia">
+		  	<a href="#"><img src="#" id="LinkedIn">LinkedIn</a>
+			<a href="#"><img src="#" id="Facebook">Facebook</a>
+			<a href="#"><img src="#" id="Twitter">Twitter</a>
+			<a href="#"><img src="#" id="Tumblr">Tumblr</a>
+		  </div>
+       </div>
       <nav>
-        <ul>
+	  
+		 <div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Menu</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#">About Us</a>
+				<a href="#">Our Programs</a>
+				<a href="#">Our Partners</a>
+				<a href="#">Get Engaged</a>
+				<a href="#">News and Events</a>
+				<a href="#">Locations</a>
+			</div>
+		</div>
+		
+		<!-- changing to dropdown nav
+        
+		<ul>
           <li id="aboutus">
             <a href="#">About Us</a>
           </li>
@@ -48,56 +64,144 @@
           <li id="locations">
           <a href="#">Locations</a>
           </li>
-          
         </ul>
+         -->
 
       </nav>
-      <section id="banner">
-        Banner
-          <img id="bannerpic"> <!-- banner pic-->
-      </section>
+
+
+	  
+      
       <section>
-        <article id ="texta">
+		  <article id="banner">
+        	<img src="images/banner.png" alt="temporary place holder" height="300px">
+		  </article>
+		  
+		  <article id="content">
           <!--some words here-->
-          Our talented alumni are currently working at Soroc           Technology, RBC, Deloitte, Virgin Mobile,         Cognizant, Rogers, TDot Performance, Synnex Canada, Bullfrog Power, CDI Computers, Morneau Shepell and other leading companies. 
-
+			  <h1> Heading or Some Catchy Phrase</h1>
+			  <h2>We Bring the Best In You!</h2>
+         <p> Our talented alumni are currently working at Soroc           Technology, RBC, Deloitte, Virgin Mobile,         Cognizant, Rogers, TDot Performance, Synnex Canada, Bullfrog Power, CDI Computers, Morneau Shepell and other leading companies. 
 Our Class 2 students are currently completing their paid internships and will be ready for full-time employment in December and January. Our students are bright, motivated and eager to add value to your business! 
-
 NPower Canada candidates are fully trained, vetted and ready to hit the ground running in IT support roles such as:
-
 * Jr. Web Developer
 * Help Desk Analyst
 * Mobile App Tester 
 * Deskside Support Specialist 
 * Field Service Technician 
 * Project Control Officer 
-* Business Analyst 
-
+* Business Analyst
+			 </p>
+			  <button id="applynow">Apply Now</button>
+			  <p>
 To learn more about recruiting an intern or employee from our talent pool, please contact: 
-
 Andrew Reddin, Program Manager
 416-979-5000 x 215301
 Andrew.Reddin@npowercanada.ca
 More About Our Toronto, Canada Office
 NPower Canada has opened its doors at Ryerson University. The office will serve as the headquarters for Technology Service Corps Canada and The Community Corps Canada.
  > Read Full Press Release
+			<table>
+			  <caption>Sponsors</caption>
+				<tr> 
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+				</tr>
+			  	<tr>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+					<td>
+						<a href="#">
+               				<img src="#" id="sponsor1">  
+              			</a>
+					</td>
+				</tr>
+			  </table>
 
 Youth unemployment stands above 20%, among the highest in Canada. At the same time, 106,000 more Information and Communication Technology (ICT) workers will need to be hired to meet Canadian employer demands by 2016 (ICTC-CTIC, Outlook 2011-2016). While women comprise 47% of the workforce, only 29% of ICT workers are female. Similarly, although new Canadians are 20% of the workforce, but only comprise 5% of ICT workers (Ryerson University, 2008). NPower Canada is committed to closing the diversity gap and providing young adults with the opportunity and tech skills to help them achieve their potential.
-
 Technology Service Corps Canada:
 - See more at: http://www.npower.org/our-locations/toronto.aspx#sthash.VzPFlQL5.dpuf
 
-
+</p>
           <!-- some thing here -->
          </article>
-         <article>
-         <!-- company logo's-->
-         
-         </article> 
+        
 
       </section>
-      <footer id="footertext">
-          Contact us |About us| Location |
+      <footer>
+		 <div id="footCont">
+	
+       <h2> Contact</h2>
+			 
+	   <div id="footMediaLinks">
+		 <a href="#"><img src="#" id="LinkedIn"></a>
+		 <a href="#"><img src="#" id="Facebook"></a>
+		 <a href="#"><img src="#" id="Twitter"></a>
+		 <a href="#"><img src="#" id="Tubmlr"></a>
+	   </div>
+	</div>
+	   <p><small>Copyright 1999-2050 by Refsnes Data <a href="#">| Privacy Policy |</a><a href="#">| Resource Center |</a><a href="#">| Contact Us |</a></small></p>
       </footer>
 
 
