@@ -1,0 +1,235 @@
+/*------------------Body Section------------------*/
+body {
+	height: 100%;
+	margin: 0;
+}
+/*----------------Container Section---------------*/
+#container{
+	display: flex;
+	flex-direction: column;
+	/*vh is the viewport which is the browser window size*/
+	/*this makes the container 100% of the window*/
+	min-height: 100vh; 
+	
+	
+}
+/*-------------------Top Area---------------------*/
+#toparea{
+	display: inherit;
+	/*space-between, spaces the elements apart equally, in this case the logo and the social media*/
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background: skyblue;
+}
+#socialMedia{
+	
+}
+	
+/*---------------Navigation Section----------------*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn: hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #37b8eb;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #37b8eb;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+ul{
+  /*Makes it a flexchild*/
+    display:  inherit;
+	
+	flex-wrap: wrap;
+	overflow: hidden;
+	list-style-type: none;
+	
+	flex-direction: row;
+	background:skyblue;
+  
+}
+
+
+li a{
+ 	text-decoration: none;
+	display: inherit;
+    padding: 15px;
+    border: 1px solid black;
+    list-style-type:  none;
+	text-align: center;
+	background:skyblue;
+}
+
+li a:hover{
+	color: yellow;
+}
+li a:active{
+  color:red;
+}
+li a:link{
+  color:black;
+}
+/*--------------Main Section-------------------*/
+section{
+	display: inherit;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+}
+
+#banner {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#banner img {
+  position:absolute;
+  border-radius: 50%;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+/*Timing for the actual fades
+*These percentages are used to start the fading early because it's supposed to last for 12s
+*/
+@keyframes bannerFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+/*Controls the timing for all the fades, perfectly aligned for 4 images*/
+#banner img:nth-of-type(1) {
+  animation-delay: 9s;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+#banner img:nth-of-type(2) {
+  animation-delay: 6s;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+#banner img:nth-of-type(3) {
+  animation-delay: 3s;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+#banner img:nth-of-type(4) {
+  animation-delay: 0;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+/*Starts off all hidded*/
+.first-image{
+	opacity: 0;
+}
+.second-image{
+	opacity: 0;
+}
+.third-image{
+	opacity: 0;
+}
+.fourth-image{
+	opacity: 0;
+}
+/*---------------Content Area-----------------*/
+#content{
+	display: inherit;
+	flex-direction: column;
+	flex: 1 600px;
+	overflow: auto;
+	align-items: center;
+	
+}
+/*--------------Footer Section----------------*/
+footer{
+	display: inherit;
+	flex-direction: column;
+	background: skyblue;
+	
+}
+#footCont{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* npowerblue #37b8eb*/
