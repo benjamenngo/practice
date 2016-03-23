@@ -46,24 +46,6 @@ body {
     display: inline-block;
 }
 
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -82,7 +64,9 @@ body {
 
 .dropdown a:hover {background-color: #f1f1f1}
 
-.show {display:block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 ul{
@@ -129,8 +113,84 @@ section{
 	justify-content: center;
 	margin: 0% 10%;
 }
-#banner img{
-	border-radius: 50%;
+#banner {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#banner img {
+  position:absolute;
+  border-radius: 50%;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+/*Timing for the actual fades
+*These percentages are used to start the fading early because it's supposed to last for 12s
+*/
+@keyframes bannerFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+/*Controls the timing for all the fades, perfectly aligned for 4 images*/
+#banner img:nth-of-type(1) {
+  animation-delay: 9s;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+#banner img:nth-of-type(2) {
+  animation-delay: 6s;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+#banner img:nth-of-type(3) {
+  animation-delay: 3s;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+#banner img:nth-of-type(4) {
+  animation-delay: 0;
+  animation-name: bannerFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 12s;
+}
+/*Starts off all hidded*/
+.first-image{
+	opacity: 0;
+}
+.second-image{
+	opacity: 0;
+}
+.third-image{
+	opacity: 0;
+}
+.fourth-image{
+	opacity: 0;
 }
 /*---------------Content Area-----------------*/
 #content{
