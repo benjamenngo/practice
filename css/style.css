@@ -46,6 +46,24 @@ body {
     display: inline-block;
 }
 
+.dropbtn {
+    background-color: #37b8eb;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #37b8eb;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -111,8 +129,8 @@ section{
 	justify-content: space-between;
 	align-items: center;
 	justify-content: center;
-	margin: 0% 10%;
 }
+
 #banner {
   position:relative;
   height:281px;
@@ -213,3 +231,5 @@ footer{
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+/* npowerblue #37b8eb*/
