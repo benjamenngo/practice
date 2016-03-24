@@ -154,27 +154,19 @@ footer{
 	justify-content: space-between;
 }
 /*-------------------images---------------------*/
-/* 	sponsor1
-	sponsor2
-	sponsor3
-	sponsor4
-	sponsor5
-	sponsor6
-	sponsor7
-	sponsor8
-	sponsor9
-	sponsor10
-	sponsor11*/
-/*------------Media icon---------*/
-/*twitter icon
-  youtube icon2
-  tumblr  icon
-  facebook icon
-  LinkedInicon
-*/
+
+
+img.one {
+ height: 25%;
+    width: 110%;
+
+}
 
 
 
+/*twitter logo please edit it in flex box*/
+img.two {
+ height: 4%;
+    width: 4%;
 
-
-*/
+}
