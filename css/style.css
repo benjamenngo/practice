@@ -6,6 +6,8 @@ body {
 /*----------------Container Section---------------*/
 #container{
 	display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
 	flex-direction: column;
 	/*vh is the viewport which is the browser window size*/
 	/*this makes the container 100% of the window*/
@@ -20,6 +22,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	background: skyblue;
+    padding: 0% 10%
 }
 #socialMedia{
 	
@@ -121,15 +124,7 @@ li a:link{
   color:black;
 }
 /*--------------Main Section-------------------*/
-section{
-	display: inherit;
-	flex: 1;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	justify-content: center;
-}
+
 
 #banner {
   position:relative;
@@ -214,16 +209,123 @@ animation-duration: 12s;
 #content{
 	display: inherit;
 	flex-direction: column;
-	flex: 1 600px;
 	overflow: auto;
-	align-items: center;
+	margin: 0% 10%;
+    
+    
 	
 }
+/*-----------bottom below nav area and before sponsors-------------------*/
+#belowBannerArea{
+	 display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%
+    
+    
+     
+}
+#LSarea img{
+    border-radius: 50%;
+    background-color: olivedrab;
+    
+}
+#insideBanAreaRS{
+    display: inherit;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+#insideBanAreaRS img{
+    background-color: olivedrab;
+}
+.sideArea{
+    display: inherit;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    
+    
+}
+#LSarea{
+    display: inherit;
+    flex-direction: column;
+    flex: 1px;
+    align-items: center;
+    
+    
+}
+
+#LSarea a{
+    align-self: flex-end;
+}
+#LSarea p{
+    display: inherit;
+    width: 600px
+}
+/*--------------Sponsors---------------------*/
+#sponsors{ 
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+    
+    
+    
+   
+}
+.sponsors{
+    display: inherit;
+    flex-wrap: nowrap;
+    
+    
+    
+}
+#group1sponsors{
+    justify-content: space-between;
+    flex: 1;
+    
+}
+#group2sponsors{
+    justify-content: space-between;
+    flex: 1;
+}
+
+/*----------------Testimonies-------------*/
+#testimony{
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    align-self: center;
+    
+    
+    
+}
+
+.testimonies{
+    margin: 0% 10px;  
+}
+.testimonies img{
+    background-color: olivedrab;
+    
+}
+.testimonies h2{
+    margin: 0px;
+}
+.testimonies p{
+    margin: 0px;
+}
+
 /*--------------Footer Section----------------*/
 footer{
 	display: inherit;
 	flex-direction: column;
 	background: skyblue;
+    padding: 0% 10%;
 	
 }
 #footCont{
