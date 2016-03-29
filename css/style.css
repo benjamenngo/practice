@@ -29,6 +29,51 @@ body {
 }
 	
 /*---------------Navigation Section----------------*/
+.dropdown{
+	display:none;
+}
+#horizontalNav{
+	
+}
+
+ul{
+  /*Makes it a flexchild*/
+    display:  inherit;
+	
+	flex-wrap: wrap;
+	overflow: hidden;
+	list-style-type: none;
+	
+	flex-direction: row;
+	background:skyblue;
+  
+}
+li{
+	display:inline;
+	margin-left:5%;
+}
+
+li a{
+ 	text-decoration: none;
+	display: inherit;
+    padding: 15px;
+    /* border: 1px solid black; */
+    list-style-type:  none;
+	text-align: center;
+	background:skyblue;
+	
+}
+
+li a:hover{
+	color: yellow;
+}
+li a:active{
+  color:red;
+}
+li a:link{
+  color:black;
+}
+
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
 	#horizontalNav{
 		display: none; 
@@ -93,44 +138,6 @@ body {
 	.dropdown:hover .dropdown-content {
 		display: block;
 	}
-}
-
-
-ul{
-  /*Makes it a flexchild*/
-    display:  inherit;
-	
-	flex-wrap: wrap;
-	overflow: hidden;
-	list-style-type: none;
-	
-	flex-direction: row;
-	background:skyblue;
-  
-}
-li{
-	display:inline;
-	margin-left:5%;
-}
-
-li a{
- 	text-decoration: none;
-	display: inherit;
-    padding: 15px;
-    border: 1px solid black;
-    list-style-type:  none;
-	text-align: center;
-	background:skyblue;
-}
-
-li a:hover{
-	color: yellow;
-}
-li a:active{
-  color:red;
-}
-li a:link{
-  color:black;
 }
 /*--------------Main Section-------------------*/
 
