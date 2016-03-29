@@ -108,7 +108,10 @@ ul{
 	background:skyblue;
   
 }
-
+li{
+	display:inline;
+	margin-left:5%;
+}
 
 li a{
  	text-decoration: none;
