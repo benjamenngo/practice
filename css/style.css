@@ -29,11 +29,12 @@ body {
 }
 	
 /*---------------Navigation Section----------------*/
+
+nav{
+	background:skyblue;
+}
 .dropdown{
 	display:none;
-}
-#horizontalNav{
-	
 }
 
 ul{
@@ -45,12 +46,13 @@ ul{
 	list-style-type: none;
 	
 	flex-direction: row;
-	background:skyblue;
+	
   
 }
 li{
 	display:inline;
 	margin-left:5%;
+	
 }
 
 li a{
@@ -60,7 +62,7 @@ li a{
     /* border: 1px solid black; */
     list-style-type:  none;
 	text-align: center;
-	background:skyblue;
+	
 	
 }
 
@@ -231,7 +233,7 @@ animation-duration: 12s;
     
 	
 }
-/*-----------bottom below nav area and before sponsors-------------------*/
+/*-----------bottom below nav area and before sponsors (Index)-------------------*/
 #belowBannerArea{
 	 display: inherit;
     flex-wrap: wrap;
@@ -335,6 +337,54 @@ animation-duration: 12s;
 .testimonies p{
     margin: 0px;
 }
+/*--------------------Our Partners CSS-------------------*/
+
+#corporatePartners{
+	display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-self: center;
+    width: 100%
+}
+#corporatePartners p{
+	margin-top:0%;
+}
+#corporatePartnersColumn{
+	display: inherit;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+
+}
+#partnersLeft{
+    display: inherit;
+    flex-direction: column;
+    flex: 1 400px;
+    align-items: center;
+}
+
+#partnersRight{
+    display: inherit;
+    flex: 1 400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+	align-items: center; 
+}
+.formatTitle{
+	color:#37b8eb;
+	font-size: 25px;
+	margin:5px;
+}
+#contactInfo p{
+	/* margin-top:-10px; */
+	padding:0px;
+	margin:0px;
+}
+#contactInfo2 p{
+	/* margin-top:-10px; */
+	padding:0px;
+	margin:0px;
+}
 
 /*--------------Footer Section----------------*/
 footer{
@@ -342,6 +392,8 @@ footer{
 	flex-direction: column;
 	background: skyblue;
     padding: 0% 10%;
+	margin:0px;
+	flex: 1;
 	
 }
 #footCont{
@@ -349,5 +401,7 @@ footer{
 	flex-direction: row;
 	justify-content: space-between;
 }
-
+footer p{
+	margin:0px;
+}
 /* npowerblue #37b8eb*/
