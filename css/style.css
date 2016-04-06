@@ -9,6 +9,8 @@ body {
     display: -ms-flex;
     display: -webkit-flex;
 	flex-direction: column;
+    position:relative;
+    top:300px;
 	/*vh is the viewport which is the browser window size*/
 	/*this makes the container 100% of the window*/
 	min-height: 100vh; 
@@ -18,11 +20,14 @@ body {
 /*-------------------Top Area---------------------*/
 #toparea{
 	display: inherit;
+    position:fixed;
+    width:90%;
+    z-index:1;
 	/*space-between, spaces the elements apart equally, in this case the logo and the social media*/
 	justify-content: space-between;
 	flex-wrap: wrap;
 	background: skyblue;
-    padding: 0% 10%
+    padding: 1% 5% 2%;
 }
 #socialMedia{
 	
@@ -78,7 +83,7 @@ li a:link{
 
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
 	#horizontalNav{
-		display: none; 
+		display: none;        
 	}
 	.dropbtn {
 		background-color: #4CAF50;
@@ -147,7 +152,7 @@ li a:link{
 #banner {
   position:relative;
   height:281px;
-  width:450px;
+  width:1050px;
   margin:0 auto;
 }
 
@@ -391,8 +396,7 @@ footer{
 	display: inherit;
 	flex-direction: column;
 	background: skyblue;
-    padding: 0% 10%;
-	margin:0px;
+    padding: 1% 5%;
 	flex: 1;
 	
 }
@@ -400,8 +404,71 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+   
 }
 footer p{
 	margin:0px;
 }
 /* npowerblue #37b8eb*/
+
+#donateRect {
+    x:5px;
+    y:8px;
+    rx: 10px;
+    ry: 10px;
+    fill: #f4ef5a;
+    stroke: black;
+    stroke-width: 3px;
+ 
+    
+}
+
+
+
+#socIcon {
+height:40px;
+border-radius: 7px;
+padding: 0px 1px;    
+}
+
+#donateText {
+    font-weight: bold;
+    font-size:20px;
+    font-family:Tahoma, Arial;
+}
+
+#slogan {
+    font-family: Century Gothic;
+    font-size:18px;
+    margin: -10px 0px 0px 210px;
+}
+
+
+
+#navButton {
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    padding: 15px;
+    background:red;
+}
+
+
+
+
+
+
+
+#donateIcon {
+    width:130px;
+    height:65px;
+}
+
+a.footLinks {
+    text-decoration: none;
+}
+
+#testfixed {
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
