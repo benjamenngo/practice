@@ -8,7 +8,108 @@
 
 
 <body>
+	<div class="container">
+<!--------------------------------------HEADER----------------------------------------->
+		<div id="toparea">  <!-- div containing header: logo, slogan, social media etc. used for background colouring and flexbox-->
+            <header>
+                <a href="index.html">    <!-- logo -->
+                <img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
+                </a>
+                <p><small>	*SOLGAN IDEAS* 
+                the Power to LearN is in your hands</small></p>
+            </header>
+            
+            <div id="socialMedia">  <!--social media links-->
+                <a href="https://www.linkedin.com/company/npower-ny"><img src="images/png/linkedin.png" id="LinkedIn" width="32px"></a>
+                <a href="https://www.facebook.com/npower.org/"><img src="images/png/FB-f-Logo__white_50.png" id="Facebook" width="32px"></a>
+                <a href="https://twitter.com/NPowerOrg"><img src="images/brandguidelinelogos/TwitterLogo_white.png" id="Twitter" width="32px"></a>
+                <a href="http://npowercommunityblog.tumblr.com/"><img src="images/tumblrlogobluewhite2/tumblr_logo_blue-white-32.png" id="Tumblr"></a>
+                <a href="https://www.youtube.com/user/NPowerOrg"><img src="images/png/youtube.png" id="Youtube"></a>
+            </div>
+        </div>
+<!---------------------------------------NAV----------------------------------------->      
+        <nav> 
+            <div class="dropdown">  <!--this div contains the clickable drop-down nav menu that's used when browser resolution is small (resized window, mobile)-->
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="Aboutus.html">About Us</a>
+                    <a href="OurPrograms.html">Our Programs</a>
+                    <a href="OurPartners.html">Our Partners</a>
+                    <a href="GetEngaged.html">Get Engaged</a>
+                    <a href="NewsandEvents.html">News and Events</a>
+                    <a href="Locations.html">Locations</a>
+                </div>
+            </div>
 
+            <div class="nav"id="horizontalNav"> <!--this div contains the standard window-spanning nav usually used when browser is full size-->
+                <ul>
+                <li id="aboutus">
+                <a href="#">About Us</a>
+                </li>
+                <li id="programs">
+                <a href="#">Our Programs</a>
+                </li>
+                <li id="partners">
+                <a href="#">Our Partners</a>
+                </li>
+                <li id="engaged">
+                <a href="#">Get Engaged</a>
+                </li>
+                <li id="news">
+                <a href="#">News and Events</a>
+                </li>
+                <li id="locations">
+                <a href="#">Locations</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+<!---------------------------------------BANNER----------------------------------------->   
+        <article id="banner"> <!--banner contains multiple images with fade transitions-->
+            <img class="first-image" src="images/banner.png" height="300px" width="800px" show>
+            <img class = "second-image" src="images/bus.png" height="300px" width="800px">
+            <img class="third-image" src="images/car.png" height="300px"width="800px">
+            <img class="fourth-image" src="images/invest.png" height="300px" width="800px">
+            <!-- <img src="images/banner.png" alt="temporary place holder" height="300px"> -->
+        </article>
+<!--------------------------------------CONTENT-----------------------------------------> 
+	<section class="content">
+		<section>
+			<h1>Our Technical Service Corps</h1>
+			<p> Our talented alumni are currently working at Soroc Technology, RBC, Deloitte, Virgin Mobile, Cognizant, Rogers, TDot Performance, Synnex Canada, Bullfrog Power, CDI Computers, Morneau Shepell and other leading companies. 
+			Our Class 2 students are currently completing their paid internships and will be ready for full-time employment in December and January.  Our students are bright, motivated and eager to add value to your business!
+			- See our Class 2 Alumni, at: <a href="testimonies.html">Here!</a></p>
+			<p>Our two streams in the TSC are:</p>
+		</section>
+		<section id="OPcontent">
+			<article>
+				<h2>Development</h2>
+				<p> NPower Canada candidates are fully trained, vetted and ready to hit the ground running in IT support roles such as: </p>
+				<ul>
+					<li>Jr. Web Developer </li>
+					<li>Mobile App Tester </li>
+					<li>Jr. Software Devloper </li>
+					<li>Jr. Mobile App developer </li>
+				</ul>
+			
+			</article>
+			<article>
+				<h2>Service Analyst</h2>
+				<p> NPower Canada candidates are fully trained, vetted and ready to hit the ground running in IT support roles such as: </p>
+				
+				
+				<ul>
+					<li> Help Desk Analyst</li>
+					<li> Deskside Support </li>
+					<li> Field Service Technician</li>
+					<li> Project Control Officer</li>
+					<li> Business Analyst</li>
+				</ul>
+				
+			</article>
+		</section>
+	</section>
+	</div>
 
 
 
