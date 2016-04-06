@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 /*----------------Container Section---------------*/
-#container{
+.container{
 	display: flex;
     display: -ms-flex;
     display: -webkit-flex;
@@ -37,7 +37,7 @@ nav{
 	display:none;
 }
 
-ul{
+.nav ul{
   /*Makes it a flexchild*/
     display:  inherit;
 	
@@ -49,13 +49,13 @@ ul{
 	
   
 }
-li{
+.nav li{
 	display:inline;
 	margin-left:5%;
 	
 }
 
-li a{
+.nav li a{
  	text-decoration: none;
 	display: inherit;
     padding: 15px;
@@ -66,13 +66,13 @@ li a{
 	
 }
 
-li a:hover{
+.nav li a:hover{
 	color: yellow;
 }
-li a:active{
+.nav li a:active{
   color:red;
 }
-li a:link{
+.nav li a:link{
   color:black;
 }
 
@@ -224,7 +224,7 @@ animation-duration: 12s;
 	opacity: 0;
 }
 /*---------------Content Area-----------------*/
-#content{
+.content{
 	display: inherit;
 	flex-direction: column;
 	overflow: auto;
@@ -405,3 +405,17 @@ footer p{
 	margin:0px;
 }
 /* npowerblue #37b8eb*/
+/*-------------------OurPrograms--------------------*/
+
+#OPcontent{
+	display: inherit;
+	
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+#OPcontent article{
+	display: inherit;
+	flex-direction: column;
+	
+}
