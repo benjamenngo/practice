@@ -12,31 +12,34 @@
     <div id="container"> <!--div to contain most site elements to make it a flexbox-->
 <!--------------------------------------HEADER----------------------------------------->      
         <div id="toparea">  <!-- div containing header: logo, slogan, social media etc. used for background colouring and flexbox-->
-            <header>
-                <a href="index.html">    <!-- logo -->
-                <img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
-                </a>
-                <p id="slogan"><small> Tech Skills. Opportunities. Brighter Futures. </small></p>
-            </header>
-            
-            <div id="socialMedia">  <!--social media links-->
-                <a href="https://www.linkedin.com/company/npower-ny">
-                    <img src="images/png/In-2C-128px-TM.png" id="socIcon"></a>
-                <a href="https://www.facebook.com/npower.org/">
-                    <img src="images/png/FB-f-Logo__blue_512.png" id="socIcon"></a>
-                <a href="https://twitter.com/NPowerOrg">
-                    <img src="images/png/Twitter2.png" id="socIcon"></a>
-                <a href="http://npowercommunityblog.tumblr.com/">
-                    <img src="images/png/tumblr_logo_blue-white-512.png" id="socIcon"></a>
-                <a href="https://www.youtube.com/user/NPowerOrg">
-                    <img src="images/png/YouTube-social-square_red_128px.png" id="socIcon"></a>
-                <a href="DONATE" id="donate">
-                    <img src="images/png/donate2.png" id="donateIcon"></a>
-                    <!--<svg width="120" height="70">
-                    <rect id="donateRect" width="110" height="60"> </rect>
-                    <text x="60px" y="35px" text-anchor="middle" alignment-baseline="central" id="donateText">Donate</text>
-                </svg></a>-->
-            </div>
+        	<div id="logoAndSocialMedia">
+				<header>
+					<a href="index.html">    <!-- logo -->
+					<img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
+					</a>
+					<p id="slogan"><small> Tech Skills. Opportunities. Brighter Futures. </small></p>
+                    <div class="socialMedia">  <!--social media links-->
+					<a href="https://www.linkedin.com/company/npower-ny">
+						<img src="images/png/In-2C-128px-TM.png" id="socIcon"></a>
+					<a href="https://www.facebook.com/npower.org/">
+						<img src="images/png/FB-f-Logo__blue_512.png" id="socIcon"></a>
+					<a href="https://twitter.com/NPowerOrg">
+						<img src="images/png/Twitter2.png" id="socIcon"></a>
+					<a href="http://npowercommunityblog.tumblr.com/">
+						<img src="images/png/tumblr_logo_blue-white-512.png" id="socIcon"></a>
+					<a href="https://www.youtube.com/user/NPowerOrg">
+						<img src="images/png/YouTube-social-square_red_128px.png" id="socIcon"></a>
+					<a href="DONATE" id="donate">
+						<img src="images/png/donate2.png" id="donateIcon"></a>
+						<!--<svg width="120" height="70">
+						<rect id="donateRect" width="110" height="60"> </rect>
+						<text x="60px" y="35px" text-anchor="middle" alignment-baseline="central" id="donateText">Donate</text>
+					</svg></a>-->
+				</div>
+				</header>
+
+				
+			</div>
 <!---------------------------------------NAV----------------------------------------->      
             <nav> 
                 <div class="dropdown">  <!--this div contains the clickable drop-down nav menu that's used when browser resolution is small (resized window, mobile)-->
@@ -128,18 +131,24 @@
             <article id="testimony"> <!--contains multiple testimonies-->
                 <div class="testimonies" id="testimony1">
                     <img src=""width="250px" height="250px">
+                    <div class="testimoniesContent">
                     <h2>Name1</h2>
                     <p>"Great Program wow amazing"</p>
+                    </div>
                 </div>
                 <div class="testimonies" id="testimony2">
                     <img src="" width="250px" height="250px">
+                    <div class="testimoniesContent" id="testimoniesContent2">
                     <h2>Name2</h2>
                     <p>"Great Program wow amazing"</p>
+                    </div>
                 </div> 
                 <div class="testimonies" id="testimony3">
                     <img src=""width="250px" height="250px">
+                    <div class="testimoniesContent">
                     <h2>Name3</h2>
                     <p>"Great Program wow amazing"</p>
+                    </div>
                 </div> 
             </article>
 <!-------------------------------------LEARN MORE--------------------------------------->   
