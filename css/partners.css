@@ -1,6 +1,7 @@
 /*--------------------Our Partners CSS-------------------*/
 
 #corporatePartners{
+	-moz-display:flex;
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
