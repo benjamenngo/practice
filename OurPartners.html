@@ -13,25 +13,35 @@
 			<div id="container">
 
 			<!--Created a div to contain the entire header to make it a flexbox-->
-
-				<div id="toparea">
-					<header>
-					<!-- logo -->
-						<a href="#">
-							<img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
-						</a>
-						<p><small>	*SLOGAN IDEAS* 
-						the Power to LearN is in your hands</small></p>
-					</header>
-
-					<div id="socialMedia">
-						<a href="https://www.linkedin.com/company/npower-ny"><img src="images/png/linkedin.png" id="LinkedIn" width="32px"></a>
-						<a href="https://www.facebook.com/npower.org/"><img src="images/png/FB-f-Logo__white_50.png" id="Facebook" width="32px"></a>
-						<a href="https://twitter.com/NPowerOrg"><img src="images/brandguidelinelogos/TwitterLogo_white.png" id="Twitter" width="32px"></a>
-						<a href="http://npowercommunityblog.tumblr.com/"><img src="images/tumblrlogobluewhite2/tumblr_logo_blue-white-32.png" id="Tumblr"></a>
-						<a href="https://www.youtube.com/user/NPowerOrg"><img src="images/png/youtube.png" id="Youtube"></a>
-					</div>
+			<div id="toparea">  <!-- div containing header: logo, slogan, social media etc. used for background colouring and flexbox-->
+			<div id="logoAndSocialMedia">
+				<header>
+					<a href="index.html">    <!-- logo -->
+					<img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
+					</a>
+					<p id="slogan"><small> Tech Skills. Opportunities. Brighter Futures. </small></p>
+                    <div class="socialMedia">  <!--social media links-->
+					<a href="https://www.linkedin.com/company/npower-ny">
+						<img src="images/png/In-2C-128px-TM.png" id="socIcon"></a>
+					<a href="https://www.facebook.com/npower.org/">
+						<img src="images/png/FB-f-Logo__blue_512.png" id="socIcon"></a>
+					<a href="https://twitter.com/NPowerOrg">
+						<img src="images/png/Twitter2.png" id="socIcon"></a>
+					<a href="http://npowercommunityblog.tumblr.com/">
+						<img src="images/png/tumblr_logo_blue-white-512.png" id="socIcon"></a>
+					<a href="https://www.youtube.com/user/NPowerOrg">
+						<img src="images/png/YouTube-social-square_red_128px.png" id="socIcon"></a>
+					<a href="DONATE" id="donate">
+						<img src="images/png/donate2.png" id="donateIcon"></a>
+						<!--<svg width="120" height="70">
+						<rect id="donateRect" width="110" height="60"> </rect>
+						<text x="60px" y="35px" text-anchor="middle" alignment-baseline="central" id="donateText">Donate</text>
+					</svg></a>-->
 				</div>
+				</header>
+
+				
+			</div>
 				<nav>
 
 					<div class="dropdown">
@@ -71,14 +81,14 @@
 
 					</div>
 				</nav>
-
-				<section id="content">
+			</div>
+				<section id="partnerContent">
 					<h2 class="formatTitle">Corporate Partners</h2>
-					
 
 						<p>Thank you to our underwriters, partners, sponsors and foundations.</p>
 						<p>Through their leadership, expertise, volunteerism, and support we continue to transform communities, families and individuals across the country and around the world through the power of technology.</p>
 					<section id="corporatePartners">
+
 						<article id="partnersLeft">
 							<h2 class="formatTitle">Corporate Partners</h2>
 							<div id="corporatePartnersColumn">
@@ -131,20 +141,37 @@
 
 				</section>
 			</div>
-				<footer>
-					<div id="footCont">
-
-						<h2> Contact</h2>
-
-						<div id="footMediaLinks">
-							<a href="#"><img src="images/png/linkedin.png" id="LinkedIn"></a>
-							<a href="#"><img src="images/png/FB-f-Logo__blue_29.png" id="Facebook"></a>
-							<a href="#"><img src="images/png/brandguidelinelogos/TwitterLogo_#55acee.png" id="Twitter"></a>
-							<a href="#"><img src="images/png/tumblr_logo_blue-white 2/tumblr_logo_blue-white-16.png" id="Tubmlr"></a>
-						</div>
-					</div>
-					<p><small>Copyright 1999-2050 by Refsnes Data <a href="#">| Privacy Policy |</a><a href="#">| Resource Center |</a><a href="#">| Contact Us |</a></small></p>
-				</footer>
+				 <footer>
+            <div id="footCont">
+                <h2> Contact</h2>
+<!--div within div for in-line positioning-->
+                <div id="footMediaLinks"> <!--footer social media links-->
+                    <a href="https://www.linkedin.com/company/npower-ny">
+                        <img src="images/png/In-2C-128px-TM.png" id="socIcon"></a>
+                    <a href="https://www.facebook.com/npower.org/">
+                        <img src="images/png/FB-f-Logo__blue_512.png" id="socIcon"></a>
+                    <a href="https://twitter.com/NPowerOrg">
+                        <img src="images/png/Twitter2.png" id="socIcon"></a>
+                    <a href="http://npowercommunityblog.tumblr.com/">
+                        <img src="images/png/tumblr_logo_blue-white-512.png" id="socIcon"></a>
+                    <a href="https://www.youtube.com/user/NPowerOrg">
+                        <img src="images/png/YouTube-social-square_red_128px.png" id="socIcon"></a>
+                    <a href="DONATE" id="donate">
+                        <img src="images/png/donate2.png" id="donateIcon"></a>
+                    <!--<svg width="120" height="70">
+                    <rect id="donateRect" width="110" height="60"> </rect>
+                    <text x="60px" y="35px" text-anchor="middle" alignment-baseline="central" id="donateText">Donate</text>
+                </svg></a>-->
+                </div>
+            </div>
+            <div id="footerLinks"> <!--footer site links-->
+                <p><small>Copyright 1999-2050 by Refsnes Data 
+                    <a class="footLinks" href="2">| Privacy Policy </a>
+                    <a class="footLinks" href="3">| Site Map </a>
+                    <a class="footLinks" href="#">| Contact Us </a>
+                </small></p>
+            </div>
+        </footer>
 
 		</body>
 
