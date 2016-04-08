@@ -57,6 +57,7 @@ nav{
 nav ul{
 	display: flex;
     flex: 1;
+	margin: 0;
 }
 nav li{
 	display:inline;
@@ -67,7 +68,7 @@ nav li{
 nav li a{
  	text-decoration: none;
 	display: inherit;
-    padding: 15px;
+    padding: 0 15px;
     /* border: 1px solid black; */
     list-style-type:  none;
 	text-align: center;
@@ -81,6 +82,9 @@ nav li a:active{
 }
 nav li a:link{
   color:black;
+}
+#navButton a{
+	padding: none;
 }
 
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
@@ -198,8 +202,9 @@ padding: 0px 1px;
     background:skyblue;
 }
 #donateIcon {
-    width:130px;
-    height:65px;
+	top: 2p
+    width:100px;
+    height:40px;
 }
 
 a.footLinks {

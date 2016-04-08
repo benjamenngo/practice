@@ -1,0 +1,18 @@
+#contentContainer{
+	margin: 0 10%;
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	padding-top: 240px;
+	flex-direction:column;
+	
+}
+#LSandRS{
+	display: inherit;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+#LSandRS article p{
+	width: 400px;
+}
