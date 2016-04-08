@@ -1,5 +1,7 @@
 /*--------------------Our Partners CSS-------------------*/
-
+#partnerContent{
+	padding-top:240px;
+}
 #corporatePartners{
 	-moz-display:flex;
 	display: flex;
