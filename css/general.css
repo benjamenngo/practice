@@ -6,74 +6,86 @@ body {
 /*----------------Container Section---------------*/
 #container{
 	display: flex;
+	display: -ms-flex;
+    display: -webkit-flex;
 	flex-direction: column;
 	/*vh is the viewport which is the browser window size*/
 	/*this makes the container 100% of the window*/
 	min-height: 100vh; 
-	
-	
 }
 /*-------------------Top Area---------------------*/
 #toparea{
-	display: inherit;
-	/*space-between, spaces the elements apart equally, in this case the logo and the social media*/
-	justify-content: space-between;
-	flex-wrap: wrap;
+	display: inline-block;
 	background: skyblue;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+#logoAndSocialMedia{
+	
+    z-index:1;
+	/*space-between, spaces the elements apart equally, in this case the logo and the social media*/
+	padding: 0% 10%;
+    margin: 0;
+}
+.socialMedia{
+    bottom: 85px;
+    position: relative;
+	left: 65% ;
+}
+@media screen and (max-width: 1050px){/*this setting is for my screen*/
+    .socialMedia{
+        position: static;
+        
+    }
 }
 	
 /*---------------Navigation Section----------------*/
+
 nav{
+    display: inline;
+	width: 100%;
 	background:skyblue;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
 }
 .dropdown{
 	display:none;
 }
-#horizontalNav{
-	
-}
 
-ul{
-  /*Makes it a flexchild*/
-    display:  inherit;
-	
-	flex-wrap: wrap;
-	overflow: hidden;
-	list-style-type: none;
-	
-	flex-direction: row;
-	background:skyblue;
-  
+nav ul{
+	display: flex;
+    flex: 1;
 }
-li{
+nav li{
 	display:inline;
-	margin-left:5%;
+	padding: 0px 4%;
+	
 }
 
-li a{
+nav li a{
  	text-decoration: none;
 	display: inherit;
     padding: 15px;
     /* border: 1px solid black; */
     list-style-type:  none;
 	text-align: center;
-	background:skyblue;
-	
 }
 
-li a:hover{
+nav li a:hover{
 	color: yellow;
 }
-li a:active{
+nav li a:active{
   color:red;
 }
-li a:link{
+nav li a:link{
   color:black;
 }
 
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
 	#horizontalNav{
-		display: none; 
+		display: none;        
 	}
 	.dropbtn {
 		background-color: #4CAF50;
@@ -141,10 +153,55 @@ footer{
 	display: inherit;
 	flex-direction: column;
 	background: skyblue;
-	
+    padding: 1% 5%;
+	flex: 1;
 }
+
 #footCont{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+footer p{
+	margin:0px;
+}
+/* npowerblue #37b8eb*/
+#donateRect {
+    x:5px;
+    y:8px;
+    rx: 10px;
+    ry: 10px;
+    fill: #f4ef5a;
+    stroke: black;
+    stroke-width: 3px;
+}
+#socIcon {
+height:40px;
+border-radius: 7px;
+padding: 0px 1px;    
+}
+
+#donateText {
+    font-weight: bold;
+    font-size:20px;
+    font-family:Tahoma, Arial;
+}
+#slogan {
+    font-family: Century Gothic;
+    font-size:18px;
+    margin: -10px 0px 0px 210px;
+}
+#navButton {
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    padding: 15px;
+    background:skyblue;
+}
+#donateIcon {
+    width:130px;
+    height:65px;
+}
+
+a.footLinks {
+    text-decoration: none;
 }
