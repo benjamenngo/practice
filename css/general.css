@@ -16,7 +16,7 @@ body {
 /*-------------------Top Area---------------------*/
 #toparea{
 	display: inline-block;
-	background: skyblue;
+	background: #37b8eb;
 	width: 100%;
 	position: fixed;
 	z-index: 1;
@@ -32,6 +32,7 @@ body {
     bottom: 85px;
     position: relative;
 	left: 65% ;
+	
 }
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
     .socialMedia{
@@ -45,7 +46,7 @@ body {
 nav{
     display: inline;
 	width: 100%;
-	background:skyblue;
+	background:#37b8eb;
     position: relative;
     padding: 0px;
     margin: 0px;
@@ -156,7 +157,7 @@ nav li a:link{
 footer{
 	display: inherit;
 	flex-direction: column;
-	background: skyblue;
+	background: #37b8eb;
     padding: 1% 5%;
 	flex: 1;
 }
@@ -182,7 +183,8 @@ footer p{
 #socIcon {
 height:40px;
 border-radius: 7px;
-padding: 0px 1px;    
+padding: 0px 1px;
+stroke: 2px black;
 }
 
 #donateText {
@@ -199,7 +201,7 @@ padding: 0px 1px;
     font-family: Trebuchet MS;
     font-weight: bold;
     padding: 15px;
-    background:skyblue;
+    background:#37b8eb;
 }
 #donateIcon {
 	top: 2p
