@@ -108,7 +108,7 @@ animation-duration: 12s;
 }
 #LSarea img{
 	border-radius: 50%;
-	background-color: olivedrab;
+	
 }
 #insideBanAreaRS{
 	display: inherit;
@@ -116,8 +116,7 @@ animation-duration: 12s;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
-#insideBanAreaRS img{
-	background-color: olivedrab;
+#insideBanAreaRS 
 }
 .sideArea{
 	display: inherit;
@@ -174,7 +173,7 @@ animation-duration: 12s;
 	margin: 0% 10px;  
 }
 .testimonies img{
-	background-color: olivedrab;
+	
     
 }
 .testimonies h2{
