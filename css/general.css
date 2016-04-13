@@ -30,9 +30,9 @@ body {
     margin: 0;
 }
 .socialMedia{
-    bottom: 85px;
-    position: relative;
-	left: 65% ;
+    top: 20px;
+    position: absolute;
+	left: 70%;
 	
 }
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
@@ -49,8 +49,10 @@ nav{
 	width: 100%;
 	background:#37b8eb;
     position: relative;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    
+	margin: 0% 0% 0% 10%;
+	
 }
 .dropdown{
 	display:none;
@@ -63,7 +65,7 @@ nav ul{
 }
 nav li{
 	display:inline;
-	padding: 0px 4%;
+	padding: 10px 4%;
 	
 }
 
@@ -86,7 +88,7 @@ nav li a:link{
   color:black;
 }
 #navButton a{
-	padding: none;
+	padding: 0;
 }
 
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
@@ -96,7 +98,7 @@ nav li a:link{
 	.dropbtn {
 		background-color: #4CAF50;
 		color: white;
-		padding: 16px;
+		padding: 0px;
 		font-size: 16px;
 		border: none;
 		cursor: pointer;
@@ -182,7 +184,7 @@ footer p{
     stroke-width: 3px;
 }
 #socIcon {
-height:40px;
+height:30px;
 border-radius: 7px;
 padding: 0px 1px;
 stroke: 2px black;
