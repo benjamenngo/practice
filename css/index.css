@@ -12,10 +12,9 @@ section{
 */
 #banner {
 	position:relative;
-	padding-top: 275px;
 	height:281px;
 	width:450px;
-	margin:0 auto;
+	margin-top:175px;
 }
 
 #banner img {
@@ -108,26 +107,35 @@ animation-duration: 12s;
 }
 #LSarea img{
 	border-radius: 50%;
-	
+	background-color: olivedrab;
 }
 #insideBanAreaRS{
 	display: inherit;
 	flex: 1;
 	flex-direction: column;
 	flex-wrap: wrap;
+	height:400px;
+	margin-top:175px;
 }
-#insideBanAreaRS 
-}
+
 .sideArea{
 	display: inherit;
 	flex-direction: row;
 	flex: 1;
 	align-items: center;
+	width:250px; 
+	
 }
+.sideArea p{
+	display: inherit;
+	flex-direction: column;
+	width:130px;
+}
+
 #LSarea{
 	display: inherit;
 	flex-direction: column;
-	flex: 1 400px;
+	flex: 1 300px;
 	align-items: center;
 }
 
@@ -136,7 +144,7 @@ animation-duration: 12s;
 }
 #LSarea p{
 	display: inherit;
-	width: 600px
+	width: 500px
 }
 /*--------------Sponsors---------------------*/
 #sponsors{ 
@@ -173,7 +181,7 @@ animation-duration: 12s;
 	margin: 0% 10px;  
 }
 .testimonies img{
-	
+	background-color: olivedrab;
     
 }
 .testimonies h2{
