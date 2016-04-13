@@ -14,6 +14,7 @@ body {
 	min-height: 100vh; 
 }
 /*-------------------Top Area---------------------*/
+
 #toparea{
 	display: inline-block;
 	background: #37b8eb;
@@ -200,7 +201,7 @@ stroke: 2px black;
 #navButton {
     font-family: Trebuchet MS;
     font-weight: bold;
-    padding: 15px;
+    margin-bottom: 2px;
     background:#37b8eb;
 }
 #donateIcon {
