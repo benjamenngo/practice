@@ -15,8 +15,9 @@ section{
 	position:relative;
 /*	top: 140px;*/
 	width: 100%;
+    margin-top: 119px
 	
-	margin-top: 158px;
+	
 }
 #banner img{
 	width: 100%;
@@ -158,6 +159,7 @@ animation-duration: 12s;
 	display: inherit;
 	flex-direction: column;
 	width:130px;
+    padding-left: 20px;
 }
 
 
@@ -189,17 +191,18 @@ animation-duration: 12s;
 /*----------------Testimonies-------------*/
 #testimony{
 	display: inherit;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	flex: 1;
 	align-self: center;
 }
 
 .testimonies{
-	margin: 0% 10px;  
+	margin: 0% 50px; 
+    
 }
 .testimonies img{
-	background-color: olivedrab;
+	
     
 }
 .testimonies h2{
@@ -213,6 +216,7 @@ animation-duration: 12s;
 	        flex-direction: column;
 	        align-self: flex-start;
 	        width: 100%;
+            
 	}
     	.testimonies{
 	        padding:35px 0px; ;
