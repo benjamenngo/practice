@@ -11,13 +11,23 @@ section{
 }
 */
 #banner {
+	display: block;
 	position:relative;
-	height:281px;
-	width:450px;
-	margin-top:175px;
+/*	top: 140px;*/
+	width: 100%;
+	
+	margin-top: 140px;
+}
+#banner img{
+	width: 100%;
 }
 
-#banner img {
+#circle{
+	position: relative;
+	display: block;
+}
+#circle img {
+	
 	position:absolute;
 	border-radius: 50%;
 	left:0;
@@ -48,28 +58,28 @@ section{
   	}
 }
 /*Controls the timing for all the fades, perfectly aligned for 4 images*/
-#banner img:nth-of-type(1) {
+#circle img:nth-of-type(1) {
   animation-delay: 9s;
   animation-name: bannerFadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
 animation-duration: 12s;
 }
-#banner img:nth-of-type(2) {
+#circle img:nth-of-type(2) {
   animation-delay: 6s;
   animation-name: bannerFadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
 animation-duration: 12s;
 }
-#banner img:nth-of-type(3) {
+#circle img:nth-of-type(3) {
   animation-delay: 3s;
   animation-name: bannerFadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
 animation-duration: 12s;
 }
-#banner img:nth-of-type(4) {
+#circle img:nth-of-type(4) {
   animation-delay: 0;
   animation-name: bannerFadeInOut;
 animation-timing-function: ease-in-out;
@@ -91,7 +101,9 @@ animation-duration: 12s;
 }
 /*---------------Content Area-----------------*/
 #content{
-	display: inherit;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
 	flex-direction: column;
 	overflow: auto;
 	margin: 0% 10%;
@@ -105,17 +117,26 @@ animation-duration: 12s;
 	width: 100%;
 	padding: 30px 0px;
 }
-#LSarea img{
-	border-radius: 50%;
-	background-color: olivedrab;
+#LSarea{
+	display: inherit; 
+	flex: 1 300px;
+	align-items: center;
 }
+
+
+#LSarea p{
+	display: inherit;
+	flex: 1;
+	width: 500px
+}
+
 #insideBanAreaRS{
 	display: inherit;
 	flex: 1;
 	flex-direction: column;
 	flex-wrap: wrap;
 	height:400px;
-	margin-top:175px;
+	
 }
 
 .sideArea{
@@ -132,20 +153,10 @@ animation-duration: 12s;
 	width:130px;
 }
 
-#LSarea{
-	display: inherit;
-	flex-direction: column;
-	flex: 1 300px;
-	align-items: center;
-}
 
-#LSarea a{
-	align-self: flex-end;
-}
-#LSarea p{
-	display: inherit;
-	width: 500px
-}
+
+	
+
 /*--------------Sponsors---------------------*/
 #sponsors{ 
 	display: inherit;
