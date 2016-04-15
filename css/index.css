@@ -16,26 +16,13 @@ section{
 /*	top: 140px;*/
 	width: 100%;
 	
-	margin-top: 140px;
+	margin-top: 158px;
 }
 #banner img{
 	width: 100%;
 }
 
-#circle{
-	position: relative;
-	display: block;
-}
-#circle img {
-	
-	position:absolute;
-	border-radius: 50%;
-	left:0;
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
-}
+
 
 /*Timing for the actual fades
 *These percentages are used to start the fading early because it's supposed to last for 12s
@@ -117,17 +104,37 @@ animation-duration: 12s;
 	width: 100%;
 	padding: 30px 0px;
 }
+
 #LSarea{
-	display: inherit; 
+ 	display: inherit;
+	flex-direction: column;
 	flex: 1 300px;
 	align-items: center;
+	margin-top: 17px;
+}
+#circle{
+	position: relative;
+	height: 281px;
+	width: 300px;
+	
+}
+#circle img{
+	
+	position:absolute;
+	border-radius: 50%;
+	left:0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
 }
 
 
 #LSarea p{
 	display: inherit;
 	flex: 1;
-	width: 500px
+	width: 500px;
+	padding-top: 20px;
 }
 
 #insideBanAreaRS{
