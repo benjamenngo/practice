@@ -1,0 +1,23 @@
+.testimoniespage{
+					display: inherit;
+					flex-direction: row;
+					flex:1;
+					
+				}
+
+#testimoniespage {
+
+					display: inherit;
+					flex-direction: column;
+					flex:1; 
+					margin: 180px 10% 0;
+}
+.testimoniespage p{
+margin:0px 15px 25px;
+}
+
+.formatTitle{
+	color:#37b8eb;
+	font-size: 45px;
+	margin:0 0 20px;
+}
