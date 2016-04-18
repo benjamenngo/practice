@@ -320,6 +320,20 @@ nav li a:link{
 .testimonies p{
     margin: 0px;
 }
+.testimoniespage{
+					display: inherit;
+					flex-direction: row;
+					flex:1; 
+				}
+
+#testimoniespage {
+
+					display: inherit;
+					flex-direction: column;
+					flex:1; 
+					margin: 0% 10%;
+
+}
 @media screen and (max-width: 1050px){/*this setting is for my screen*/
     #testimony{
         flex-direction: column;
@@ -342,6 +356,7 @@ nav li a:link{
     }
    
 }
+
 /*--------------------Our Partners CSS-------------------*/
 
 #corporatePartners{
