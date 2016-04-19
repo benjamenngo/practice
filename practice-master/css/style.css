@@ -1,0 +1,471 @@
+/*------------------Body Section------------------*/
+body {
+	height: 100%;
+	margin: 0;
+}
+/*----------------Container Section---------------*/
+#container{
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	/*vh is the viewport which is the browser window size*/
+	/*this makes the container 100% of the window*/
+	min-height: 100vh; 
+}
+/*-------------------Top Area---------------------*/
+#toparea{
+	display: inline-block;
+	background: skyblue;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+#logoAndSocialMedia{
+	z-index:1;
+	padding: 0% 10%;
+	margin: 0;
+}
+.socialMedia{
+	bottom: 85px;
+	position: relative;
+	left: 65% ;
+}
+@media screen and (max-width: 1050px){/*this setting is for my screen*/
+    .socialMedia{
+        position: static;       
+    }
+}	
+/*---------------Navigation Section----------------*/
+
+nav{
+	display: inline;
+	width: 100%;
+	background:skyblue;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+.dropdown{
+	display:none;
+}
+
+nav ul{
+  display: flex;
+    flex: 1;
+}
+nav li{
+	display:inline;
+	padding: 0px 4%;
+	
+}
+
+nav li a{
+	 text-decoration: none;
+	display: inherit;
+	padding: 15px;
+	/* border: 1px solid black; */
+	list-style-type:  none;
+	text-align: center;
+}
+
+nav li a:hover{
+	color: yellow;
+}
+nav li a:active{
+	color:red;
+}
+nav li a:link{
+	color:black;
+}
+
+@media screen and (max-width: 1050px){/*this setting is for my screen*/
+	#horizontalNav{
+		display: none;        
+	}
+	.dropbtn {
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		
+	}
+
+	/* Dropdown button on hover & focus */
+	.dropbtn: hover, .dropbtn:focus {
+		background-color: #3e8e41;
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropbtn {
+		background-color: #37b8eb;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+		background-color: #37b8eb;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		overflow: auto;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+}
+/*--------------Main Section-------------------*/
+
+
+#banner {
+	position: relative;
+	padding-top: 275px;
+	height:281px;
+	width:1050px;
+	margin:0 auto;
+}
+
+#banner img {
+	position:absolute;
+	border-radius: 50%;
+	left:0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+/*Timing for the actual fades
+*These percentages are used to start the fading early because it's supposed to last for 12s
+*/
+@keyframes bannerFadeInOut {
+	0% {
+	opacity:1;
+	}
+	17% {
+	opacity:1;
+	}
+	25% {
+	opacity:0;
+	}
+	92% {
+	opacity:0;
+	}
+	100% {
+	opacity:1;
+	}
+}
+/*Controls the timing for all the fades, perfectly aligned for 4 images*/
+#banner img:nth-of-type(1) {
+	animation-delay: 9s;
+	animation-name: bannerFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+}
+#banner img:nth-of-type(2) {
+	animation-delay: 6s;
+	animation-name: bannerFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+}
+#banner img:nth-of-type(3) {
+	animation-delay: 3s;
+	animation-name: bannerFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+}
+#banner img:nth-of-type(4) {
+	animation-delay: 0;
+	animation-name: bannerFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+}
+/*Starts off all hidded*/
+.first-image{
+	opacity: 0;
+}
+.second-image{
+	opacity: 0;
+}
+.third-image{
+	opacity: 0;
+}
+.fourth-image{
+	opacity: 0;
+}
+/*---------------Content Area-----------------*/
+#content{
+	display: inherit;
+	flex-direction: column;
+	overflow: auto;
+	margin: 0% 10%;	
+}
+/*-----------bottom below nav area and before sponsors (Index)-------------------*/
+#belowBannerArea{
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%;
+    padding: 30px 0px;
+}
+#LSarea img{
+    border-radius: 50%;
+    background-color: olivedrab;
+}
+#insideBanAreaRS{
+    display: inherit;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#insideBanAreaRS img{
+    background-color: olivedrab;
+}
+.sideArea{
+    display: inherit;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+}
+#LSarea{
+    display: inherit;
+    flex-direction: column;
+    flex: 1 400px;
+    align-items: center;
+}
+
+#LSarea a{
+    align-self: flex-end;
+}
+#LSarea p{
+    display: inherit;
+    width: 600px
+}
+/*--------------Sponsors---------------------*/
+#sponsors{ 
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: auto;
+    padding: 20px 0px;
+}
+.sponsors{
+    display: inherit;
+    flex-wrap: nowrap;
+}
+#group1sponsors{
+    justify-content: space-between;
+    flex: 1;
+}
+#group2sponsors{
+    justify-content: space-between;
+   flex: 1;
+}
+
+/*----------------Testimonies-------------*/
+#testimony{
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    align-self: center;	
+}
+
+.testimonies{
+    margin: 0% 10px;  
+}
+.testimonies img{
+    background-color: olivedrab;
+    
+}
+.testimonies h2{
+    margin: 0px;
+}
+.testimonies p{
+    margin: 0px;
+}
+.testimoniespage{
+					display: inherit;
+					flex-direction: row;
+					flex:1; 
+				}
+
+#testimoniespage {
+
+					display: inherit;
+					flex-direction: column;
+					flex:1; 
+					margin: 0% 10%;
+
+}
+@media screen and (max-width: 1050px){/*this setting is for my screen*/
+    #testimony{
+        flex-direction: column;
+        align-self: flex-start;
+        width: 100%;
+    }
+    .testimonies{
+        padding:35px 0px; ;
+        display: inherit;
+        flex-direction: row;
+    }
+    .testimoniesContent{
+        padding: 10px 35px;
+        width: 50%;
+        
+    }
+    #testimony2{
+        flex-direction: row-reverse;
+        padding: 0px 5px;
+    }
+   
+}
+
+/*--------------------Our Partners CSS-------------------*/
+
+#corporatePartners{
+	display: inherit;
+    	flex-wrap: wrap;
+    	justify-content: space-between; 
+    	align-self: center;
+    	width: 100%
+}
+#corporatePartners p{
+	margin-top:0%;
+}
+#corporatePartnersColumn{
+	display: inherit;
+    	flex-direction: column;
+    	flex: 1;
+	align-items: center;
+
+}
+#partnersLeft{
+    	display: inherit;
+    	flex-direction: column;
+    	flex: 1 400px;
+    	align-items: center;
+}
+
+#partnersRight{
+    	display: inherit;
+    	flex: 1 400px;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+	align-items: center; 
+}
+.formatTitle{
+	color:#37b8eb;
+	font-size: 25px;
+	margin:5px;
+}
+#contactInfo p{
+	/* margin-top:-10px; */
+	padding:0px;
+	margin:0px;
+}
+#contactInfo2 p{
+	/* margin-top:-10px; */
+	padding:0px;
+	margin:0px;
+}
+
+/*--------------Footer Section----------------*/
+footer{
+	display: inherit;
+	flex-direction: column;
+	background: skyblue;
+	padding: 1% 5%;
+	flex: 1;
+	
+}
+#footCont{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+   
+}
+footer p{
+	margin:0px;
+}
+/* npowerblue #37b8eb*/
+
+#donateRect {
+	x:5px;
+	y:8px;
+	rx: 10px;
+	ry: 10px;
+	fill: #f4ef5a;
+	stroke: black;
+	stroke-width: 3px;
+}
+
+#socIcon {
+	height:40px;
+	border-radius: 7px;
+	padding: 0px 1px;    
+}
+
+#donateText {
+	font-weight: bold;
+	font-size:20px;
+	font-family:Tahoma, Arial;
+}
+
+#slogan {
+	font-family: Century Gothic;
+	font-size:18px;
+	margin: -10px 0px 0px 210px;
+}
+
+#navButton {
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	padding: 15px;
+	background:skyblue;
+}
+
+#donateIcon {
+	width:130px;
+	height:65px;
+}
+
+a.footLinks {
+	text-decoration: none;
+}

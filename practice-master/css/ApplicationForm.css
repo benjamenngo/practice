@@ -1,0 +1,40 @@
+/*----------------------Application Page--------------*/
+p#slideControls{
+  text-align:center;
+}
+#slideControls span {
+  padding-right:2em;
+  cursor:pointer;
+}
+#slideApp {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto 10%; 
+  
+}
+#slideApp div {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+#slideApp div.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+#shortAnswer{
+	margin:auto;
+	-webkit-align-self:center;
+	-moz-align-self:center;
+	-o-align-self:center;
+	align-self:center;
+	
+}

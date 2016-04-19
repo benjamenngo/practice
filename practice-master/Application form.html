@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Application Form</title>
+			<link href="css/general.css" type="text/css" rel="stylesheet">
+			<link href="css/ApplicationForm.css" type="text/css" rel="stylesheet">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			<script src="js/interact.js"></script>
+			<!--- please connect webpage -->
+		</head>
+
+
+		<body>
+			<p id="slideControls">
+				<span class="selected">Step 1</span>
+				<span>Step 2</span>
+				<span>Step 3</span>
+			</p>
+			<div id="slideApp">
+			<div class="opaque">
+				<form action= "action_page.php">
+					<fieldset>
+						<legend> General Information</legend>
+						<br>First Name *
+						<input type="text" name="firstname"><br><br>
+						Last Name *
+						<input type="text" name="lastname"><br><br>
+
+						Date of Birth *
+						<input type="text" name="dateofbirth"><br><br>
+
+						Address 
+						<input type="text" name="address"><br><br>
+						City *
+						<input type="text" name="city"><br><br>
+
+						Province * 
+						<input type="text" name="province"><br><br>
+						Postal Code
+						<input type="text" name="postalcode"><br><br>
+						Home Phone Number
+						<input type="text" name="homephone"><br><br>
+
+						Cell Phone Number 
+						<input type="text" name="cellphone"><br><br>
+						Email Address *
+						<input type="text" name="email"><br>
+
+						
+						<p> Neighbourhood:</p>
+						<select name="Neighbourhood:">
+							<option value="ps">Please select... </option>
+							<option value="dr">Durham Region</option>
+							<option value="ey">East York</option>
+							<option value="e">Etobicoke</option>
+							<option value="ny">North York</option>
+							<option value="pr">Peel Region</option>
+							<option value="s">Scarborough</option>
+							<option value="t">Toronto</option>
+							<option value="yr">York Region</option>
+							<option value="y">York</option>
+						</select>
+
+						<br>
+						<p> How do you prefer to be contacted?</p>
+						<select name="How do you prefer to be contacted?">
+							<option value="ps2">Please select... </option>
+							<option value="hp">Home Phone</option>
+							<option value="cp">Cell Phone</option>
+							<option value="em">Email</option>
+						</select>
+
+					</fieldset>
+				</form>
+
+
+
+
+
+				<br>
+				<form action="action_page.php">
+					<fieldset>	
+						<legend>Education</legend>
+						<p> What is the highest level of education that you have completed?*</p>
+						<select name="Education">
+							<option value="ps3">Please select... </option>
+							<option value="ls">Less than High School</option>
+							<option value="ge">GED</option>
+							<option value="hs">High School</option>
+							<option value="sc">Some College/University</option>
+							<option value="ud">Undergraduate Degree/Diploma</option>
+							<option value="gd">Graduate Degree</option>
+							<option value="pg">Post Graduate Diploma/Certificate</option>
+						</select>
+
+						<p> Are you currently enrolled in any college/training/educational program? *</p>
+						<input type="radio" name="text" value="Yes"> Yes
+						<input type="radio" name="text" value="No"> No<br>  
+					</fieldset>
+				</form>
+
+				<br>
+				<form action="action_page.php">
+					<fieldset>	
+					<legend>Employment Information</legend>
+					<p> Employment Status * </p>
+					<input type="radio" name="text" value="Employed"> Employed
+					<input type="radio" name="text" value="Unemployed"> Unemployed
+
+					</fieldset>
+				</form>
+			</div>
+			
+			<div>
+				<form action= "action_page.php">
+					<fieldset>
+						<legend> Other</legend>
+						<br>Household Size *
+						<input type="text" name="housesize"><br>
+						Annual Household Income *
+						<input type="text" name="houseincome"><br>
+
+						Annual Individual Income *
+						<input type="text" name="individualincome"> <br>
+						Are you legally entitled to work in Canada? *
+						<input type="radio" name="text" value="Yes"> Yes
+						<input type="radio" name="text" value="No"> No 
+
+						<p>Please select all technology certifications that you have: *</p> 
+						<input type="checkbox" name="cert" value="cert">A+ Part 1
+						<input type="checkbox" name="cert" value="cert">A+ Part 2
+						<input type="checkbox" name="cert" value="cert">CCENT 
+						<input type="checkbox" name="cert" value="cert">CCNA<br>
+						<input type="checkbox" name="cert" value="cert">MCA 
+						<input type="checkbox" name="cert" value="cert">MCP 
+						<input type="checkbox" name="cert" value="cert">MCSE 
+						<input type="checkbox" name="cert" value="cert">MCT <br>
+						<input type="checkbox" name="cert" value="cert">MOUS
+						<input type="checkbox" name="cert" value="cert">Network+
+						<input type="checkbox" name="cert" value="cert">Security+
+						<input type="checkbox" name="cert" value="cert">Other <br>
+						<input type="checkbox" name="cert" value="cert">None 
+
+						<p>How did you hear about us? *</p> 
+						<input type="checkbox" name="cert" value="cert">Npower Website
+						<input type="checkbox" name="cert" value="cert">Non-NPower Website<br>
+						<input type="checkbox" name="cert" value="cert">NPower Staff 
+						<input type="checkbox" name="cert" value="cert">Friend/Family Member<br>
+						<input type="checkbox" name="cert" value="cert">TSC Presentation 
+						<input type="checkbox" name="cert" value="cert">Alumnus/a<br> 
+						<input type="checkbox" name="cert" value="cert">NPower Advertisement 
+						<input type="checkbox" name="cert" value="cert">City of Toronto<br>
+						<input type="checkbox" name="cert" value="cert">Community-Based Organization
+						<input type="checkbox" name="cert" value="cert">School/Training Provider<br>
+						<input type="checkbox" name="cert" value="cert">Other
+						Previously Applied? *
+						<input type="radio" name="text" value="Yes"> Yes
+						<input type="radio" name="text" value="No"> No 
+
+					</fieldset>
+				</form>
+
+				<br>
+				<form action="action_page.php">
+					<fieldset>	
+						<legend>Optional</legend>
+						<p>The following questions are voluntary and will be used only for NPower data purposes. Your responses will not be used to determine program eligibility. While we appreciate your responses, they are not required as part of the application process.</p>
+
+						Gender<br>
+						<input type="radio" name="gender" value="Male"> Male<br>
+						<input type="radio" name="gender" value="Female"> Female<br>  
+						<input type="radio" name="gender" value="Trans"> Trans<br>
+						<input type="radio" name="gender" value="2Spirited"> 2-Spirited<br> 
+						<input type="radio" name="gender" value="Other"> Other<br>
+						<input type="radio" name="gender" value="Prefernottoanswer"> Prefer not to Answer<br>  
+						<br>
+						Race/Ethnicity<br>
+						<input type="radio" name="race" value="African"> African Canadian/Black<br>
+						<input type="radio" name="race" value="Latino"> Latina/o, Hispanic<br>  
+						<input type="radio" name="race" value="Asian"> Asian (Mid-East, East, South, Southeast)<br>
+						<input type="radio" name="race" value="Aboriginal"> Aboriginal<br> 
+						<input type="radio" name="race" value="Caucasion"> Caucasion<br>
+						<input type="radio" name="race" value="Mixed"> Mixed<br> 
+						<input type="radio" name="race" value="Other"> Other<br>
+					</fieldset>
+				</form>
+			</div>
+			
+			<div id ="shortAnswer">
+				<form action="action_page.php">
+					<fieldset>	
+						<legend>Short Answer Questions</legend>
+						<p>Please answer the following two short-answer questions. Please limit your 
+						responses to no more than 3 sentences. </p>
+						<p>Why do you want to be a part of the Technology Service Corps (TSC) program? *</p>
+						<textarea rows="10" cols="56">
+						</textarea>
+						<p>Why do you think you'll be successful in the TSC program? In other words, what qualities, experiences, or interests make you the right candidate for this program? *</p>
+						<textarea rows="10" cols="56">
+						</textarea>
+						<p>Please describe any difficulties you have faced when attempting to find meaningful employment. *</p>
+						<textarea rows="10" cols="56">
+						</textarea>
+						<p>Have you experienced barriers to pursuing or completing postsecondary education? *</p>
+						<textarea rows="10" cols="56">
+						</textarea>
+
+						<br><input type="submit" value="Submit">
+					</fieldset>
+				</form>
+			</div>
+			</div>
+
+		</body>
+	</html>
