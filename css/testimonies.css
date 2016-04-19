@@ -1,23 +1,95 @@
 .testimoniespage{
-					display: inherit;
-					flex-direction: row;
-					flex:1;
-					
-				}
-
-#testimoniespage {
-
-					display: inherit;
-					flex-direction: column;
-					flex:1; 
-					margin: 180px 10% 0;
+	display: inherit;
+	flex-direction: row;
+	flex:1;
+	margin: 10px 0px;
 }
+.testimoniespageRight{
+	display: inherit;
+	flex-direction: row;
+	flex:1;
+	justify-content:flex-end;
+	margin: 10px 0px;
+}
+#testimoniespage {
+	display: inherit;
+	flex-direction: column;
+	flex:1; 
+	margin: 180px 10% 0;
+}
+
 .testimoniespage p{
-margin:0px 15px 25px;
+margin:0px 15px 20px;
 }
 
 .formatTitle{
 	color:#37b8eb;
 	font-size: 45px;
 	margin:0 0 20px;
+}
+
+#nameAndTitle h4{
+	margin: 0 15px 25px;
+}
+
+#nameAndTitle2 h4{
+	margin: 0 15px 25px;
+	text-align:right;
+}
+
+#nameAndTitle2 p{
+	text-align:right;
+	margin: 0 15px 20px;
+}
+
+#right{
+	float:right;
+}
+
+#bio{
+	display:none;
+}
+
+#bio2{
+	display:none;
+}
+
+#bio3{
+	display:none;
+}
+
+#bio4{
+	display:none;
+}
+
+#bio5{
+	display:none;
+}
+
+#bio6{
+	display:none;
+}
+
+#bio7{
+	display:none;
+}
+
+#bio8{
+	display:none;
+}
+
+#bio9{
+	display:none;
+}
+
+#bio10{
+	display:none;
+}
+
+#bio11{
+	display:none;
+}
+
+#bio12{
+	display:none;
 }
