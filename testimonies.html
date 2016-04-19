@@ -1,86 +1,81 @@
 <!doctype html><!--Team babaV's AWESOME WINNING WEBSITE!-->
 <html>
-
+<!---------------------------------------HEAD----------------------------------------->
 <head>
     <meta charset="utf-8">
     <title>NPower Canada</title>
-	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/testimonies.css" type="text/css" rel="stylesheet">
+	<link href="css/general.css" type="text/css" rel="stylesheet">
+	
 	<script src="js/interact.js"></script>
 </head>
-  
+<!---------------------------------------BODY----------------------------------------->  
 <body>
-    <div id="container">
-    
-      <!--Created a div to contain the entire header to make it a flexbox-->
-		
-      <div id="toparea">
-           <header>
-            <!-- logo -->
-              <a href="#">
-               	<img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
-              </a>
+    <div id="container"> <!--div to contain most site elements to make it a flexbox-->
+<!--------------------------------------HEADER----------------------------------------->      
+        <div id="toparea">  <!-- div containing header: logo, slogan, social media etc. used for background colouring and flexbox-->
+        	<div id="logoAndSocialMedia">
+				<header>
+					<a href="index.html">    <!-- logo -->
+					<img src="images/npower-tsc-canada-logo.CYAN.png" id="npowerlogo" width="400px">  
+					</a>
+					<p id="slogan"><small> Tech Skills. Opportunities. Brighter Futures. </small></p>
+                    <div class="socialMedia">  <!--social media links-->
+					<a href="https://www.linkedin.com/company/npower-ny">
+						<img src="images/png/In-2C-128px-TM.png" id="socIcon"></a>
+					<a href="https://www.facebook.com/npower.org/">
+						<img src="images/png/FB-f-Logo__blue_512.png" id="socIcon"></a>
+					<a href="https://twitter.com/NPowerOrg">
+						<img src="images/png/Twitter2.png" id="socIcon"></a>
+					<a href="http://npowercommunityblog.tumblr.com/">
+						<img src="images/png/tumblr_logo_blue-white-512.png" id="socIcon"></a>
+					<a href="https://www.youtube.com/user/NPowerOrg">
+						<img src="images/png/YouTube-social-square_red_128px.png" id="socIcon"></a>
+					<a href="DONATE" id="donate">
+						<img src="images/png/donate2.png" id="donateIcon"></a>
+						<!--<svg width="120" height="70">
+						<rect id="donateRect" width="110" height="60"> </rect>
+						<text x="60px" y="35px" text-anchor="middle" alignment-baseline="central" id="donateText">Donate</text>
+					</svg></a>-->
+				</div>
+				</header>
 
-			  <p><small>	*SOLGAN IDEAS* 
-			  	 	the Power to LearN is in your hands</small></p>
-           </header>
-        
-          <div id="socialMedia">
-          		  	
-                <a href="https://www.linkedin.com/company/npower-ny"><img src="images/png/linkedin.png" id="LinkedIn" width="32px"></a>
-          			
-                <a href="https://www.facebook.com/npower.org/"><img src="images/png/FB-f-Logo__white_50.png" id="Facebook" width="32px"></a>
-          			
-                <a href="https://twitter.com/NPowerOrg"><img src="images/brandguidelinelogos/TwitterLogo_white.png" id="Twitter" width="32px"></a>
-          			
-                <a href="http://npowercommunityblog.tumblr.com/"><img src="images/tumblrlogobluewhite2/tumblr_logo_blue-white_transparent-32.png" id="Tumblr"></a>
-
-          			<a href="https://www.youtube.com/user/NPowerOrg"><img src="images/png/youtube.png" id="Youtube"></a>
-		      </div>
-      </div>
-      <nav>
-	  
-		 <div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">Menu</button>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="Aboutus.html">About Us</a>
-				<a href="OurPrograms.html">Our Programs</a>
-				<a href="OurPartners.html">Our Partners</a>
-				<a href="GetEngaged.html">Get Engaged</a>
-				<a href="NewsandEvents.html">News and Events</a>
-				<a href="Locations.html">Locations</a>
+				
 			</div>
-		</div>
-		
-	
-        <div id="horizontalNav">
-		<ul>
+<!---------------------------------------NAV----------------------------------------->      
+            <nav> 
+                <div class="dropdown">  <!--this div contains the clickable drop-down nav menu that's used when browser resolution is small (resized window, mobile)-->
+                    <button class="dropbtn">Menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Aboutus.html">About Us</a>
+                        <a href="OurPrograms.html">Our Programs</a>
+                        <a href="OurPartners.html">Our Partners</a>
+                        <a href="NewsandEvents.html">News and Events</a>
+                    </div>
+                </div>
+
+                <div id="horizontalNav"> <!--this div contains the standard window-spanning nav usually used when browser is full size-->
+                    <ul>
 			<li id="aboutus">
-				<a href="Aboutus.html">About Us</a>
+				<a href="Aboutus.html" id="navButton">About Us</a>
 			</li>
 			<li id="programs">
-				<a href="OurPrograms.html">Our Programs</a>
+				<a href="OurPrograms.html" id="navButton">Our Programs</a>
 			</li>
 			<li id="partners">
-				<a href="OurPartners.html">Our Partners</a>
-			</li>
-			<li id="engaged">
-				<a href="GetEngaged.html">Get Engaged</a>
+				<a href="OurPartners.html" id="navButton">Our Partners</a>
 			</li>
 			<li id="news">
-				<a href="NewsandEvents.html">News and Events</a>
+				<a href="NewsandEvents.html" id="navButton">News and Events</a>
 			</li>
-			<li id="locations">
-				<a href="Locations.html">Locations</a>
-			</li>
-        	</ul>
-         
-	</div>
-      </nav>
-   
-       
-		  
-	
-            <section id="testimoniespage">
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+<!--------------------------------------CONTENT----------------------------------------->   
+			<section id="testimoniespage">
+				<h2 class="formatTitle">Testimonies</h2>
                 <article class="testimoniespage">
                     <img src="images/people/Class_1_Graduation_Brochure-10.png" height="100px" width="100px" >
                     <p> I joined NPower with little experience and knowledge in IT, but I was very eager
@@ -95,13 +90,9 @@
                         come and I am very excited for the future.
                     </p>
                 </article>
-
-
-
-
-               
-                <article class="testimoniespage">
-                  <p class="testimoniespic">Juan Jose Ayala-Sandoval, 24, North York
+				
+				<article class="testimoniespage">
+					<p class="testimoniespic">Juan Jose Ayala-Sandoval, 24, North York
                             Internship: Accenture
                             I was at a crossroad in my life, working as a shift supervisor at McDonald’s,
                             not too sure where I wanted to go next, but after hearing about the NPower
@@ -139,8 +130,7 @@
                 </article>
 
                 <article class="testimoniespage">
-                   
-                    <p> El Roi Pablo, 22, Pickering
+					<p> El Roi Pablo, 22, Pickering
                         Internship: Cisco
                         In April 2014, I completed Software Engineering and Interactive Gaming at
                         Centennial College. At first, I was searching for a job coding and programming,
@@ -180,8 +170,7 @@
                     </p>         
                 </article>
 
-                     <article class="testimoniespage">
-                    
+				<article class="testimoniespage">
                     <p>Tariq Rend, 22, Toronto
                         Internship: Infrastructure Ontario
                         Graduating from NPower Canada, I have definitely gained more valuable work
@@ -201,7 +190,7 @@
                 </article>
 
                <article class="testimoniespage">
-                          <img src="images/people/Class_1_Graduation_Brochure-9.png"height="100px"width="100px">
+					<img src="images/people/Class_1_Graduation_Brochure-9.png"height="100px"width="100px">
                     <p>Maria Luisa Aguirre, 26, Scarborough
                         Employed: CDI Computers
                         I came into this program without any professional experience or education in
@@ -216,13 +205,11 @@
                         College in computer programming. I am excited to be in my new career and
                         look forward to what there is for me in the future.
                     </p>  
-                      
-                </article>
+				</article>
 
 
                <article class="testimoniespage">
-                         
-                    <p>Mohamed Iqbal Abdulmuneem, 24, Toronto
+					<p>Mohamed Iqbal Abdulmuneem, 24, Toronto
                     Internship: Dixon Hall
                     NPower has given me an experience that I will never forget. Before NPower,
                     I was working as a security guard and volunteering with Young GE as a peer
@@ -233,11 +220,11 @@
                     I feel like I am now equipped with the knowledge and the talent that I
                     need to get my career in IT started.
                     </p>  
-                       <img src="images/people/Class_1_Graduation_Brochure-7.png"height="100px"width="100px">
+					<img src="images/people/Class_1_Graduation_Brochure-7.png"height="100px"width="100px">
                 </article>
                 
-              <article class="testimoniespage">
-                     <img src="images/people/Class_1_Graduation_Brochure-8.png"height="100px"width="100px">     
+				<article class="testimoniespage">
+					<img src="images/people/Class_1_Graduation_Brochure-8.png"height="100px"width="100px">     
                     <p>Vanessa Jasmine Aguirre-Orellana, 23,
                     Scarborough
                     Internship: Office of the Vice President, Research and
@@ -251,48 +238,44 @@
                     into practice the theory we’ve been learning. I really found this program
                     to be beneficial and hope it can continue on to other young adults.
                     </p>  
-                      
+				</article>
+                
+				<article class="testimoniespage">
+					<p>
+						Julius Gammad, 22, Toronto
+						Internship: Davenport-Perth Community Centre
+						Before I joined NPower, I was hanging around at home most of the time. I
+						had been going on interviews but I was not receiving any responses. Most
+						positions I would apply for would tell me that I needed more experience. So
+						one day, while I was browsing online for jobs, I saw NPower on a community
+						centre website, and after researching it, I signed up. I joined because I want to
+						expand and focus my technical knowledge, and hopefully gain employment in
+						a field that I excel in. Along the way, I made a lot of friends and connections.
+						My self-esteem flourished because of NPower professional development. I am
+						really thankful for being accepted into this program. It helped me grow and
+						gain a lot of knowledge and training. Hopefully 10-15 years from now, I will be
+						a System Administrator or Network Administrator then attend an alumni event
+						or be a guest speaker so that I can share my stories to the future generations
+						taking the NPower-TSC program. More power to NPower!
+                    </p>  
+					<img src="images/people/Class_1_Graduation_Brochure-17.png"height="100px"width="100px">
                 </article>
                 
-                  <article class="testimoniespage">
-                         
-                    <p>
-                      Julius Gammad, 22, Toronto
-                      Internship: Davenport-Perth Community Centre
-                      Before I joined NPower, I was hanging around at home most of the time. I
-                      had been going on interviews but I was not receiving any responses. Most
-                      positions I would apply for would tell me that I needed more experience. So
-                      one day, while I was browsing online for jobs, I saw NPower on a community
-                      centre website, and after researching it, I signed up. I joined because I want to
-                      expand and focus my technical knowledge, and hopefully gain employment in
-                      a field that I excel in. Along the way, I made a lot of friends and connections.
-                      My self-esteem flourished because of NPower professional development. I am
-                      really thankful for being accepted into this program. It helped me grow and
-                      gain a lot of knowledge and training. Hopefully 10-15 years from now, I will be
-                      a System Administrator or Network Administrator then attend an alumni event
-                      or be a guest speaker so that I can share my stories to the future generations
-                      taking the NPower-TSC program. More power to NPower!
-                    </p>  
-                       <img src="images/people/Class_1_Graduation_Brochure-17.png"height="100px"width="100px">
-                </article>
-                
-                  <article class="testimoniespage">
-                   <img src="images/people/Class_1_Graduation_Brochure-13.png"height="100px"width="100px">    
-                    <p>Shane Falconer, 20, Toronto
-                          Internship: TD
-                          Before attending NPower I was in college but, for many reasons, I couldn’t
-                          continue my studies. I’ve always had an interest in technology. Ever since I was
-                          a child, I remember days where I would just open computers, take everything
-                          out and try to fix everything through trial and error. From there I decided that
-                          technology was something I was really interested in. One day I received an
-                          email from an old guidance counselor about NPower and instantly thought to
-                          myself “This would be a great opportunity for me” so I took the chance and
-                          it’s been great so far. I can’t wait for what the future holds.
-                    </p>  
-    
-                </article>
-                 <article class="testimoniespage">
-                     
+				<article class="testimoniespage">
+					<img src="images/people/Class_1_Graduation_Brochure-13.png"height="100px"width="100px">    
+					<p>Shane Falconer, 20, Toronto
+					Internship: TD
+					Before attending NPower I was in college but, for many reasons, I couldn’t
+					continue my studies. I’ve always had an interest in technology. Ever since I was
+					a child, I remember days where I would just open computers, take everything
+					out and try to fix everything through trial and error. From there I decided that
+					technology was something I was really interested in. One day I received an
+					email from an old guidance counselor about NPower and instantly thought to
+					myself “This would be a great opportunity for me” so I took the chance and
+					it’s been great so far. I can’t wait for what the future holds.
+					</p>  
+				</article>
+				<article class="testimoniespage">
                     <p>Laxman Gnanendran, 24, Scarborough
                         Internship: TAO Solutions
                         Before NPower, I spent about three years in University doing an arts program
@@ -311,39 +294,43 @@
                         every flavor beans and a train full of friends. I could not be any happier and
                         excited for my journey. Thank you.
                     </p>  
-                      <img src="images/people/Class_1_Graduation_Brochure-16.png"height="100px"width="100px">
+					<img src="images/people/Class_1_Graduation_Brochure-16.png"height="100px"width="100px">
                 </article>
-                
-         </section>
-
-  
-      <footer>
-		 <div id="footCont">
-	
-       <h2> Contact</h2> 
-	   <div id="footMediaLinks">
-		 <a href="https://www.linkedin.com/company/npower-ny"><img src="images/png/linkedin.png" id="LinkedIn" width="32px"></a>
-		 <a href="https://www.facebook.com/npower.org/"><img src="images/png/FB-f-Logo__white_50.png" id="Facebook" width="32px"></a>
-		 <a href="https://twitter.com/NPowerOrg"><img src="images/brandguidelinelogos/TwitterLogo_white.png" id="Twitter" width="32px"></a>
-		 <a href="http://npowercommunityblog.tumblr.com/"><img src="images/tumblrlogobluewhite2/tumblr_logo_blue-white-32.png"  id="Tubmlr" width="32px">
-
-     </a>
-	   </div>
-	</div>
-	   <p>
-      <small>Copyright 1999-2050 by Refsnes Data 
-        <a 
-            href="#">| Privacy Policy |</a><a href="#">| Resource Center |
-        </a>
-        <a
-           href="#">| Contact Us |
-        </a>
-     </small>
-    </p>
-</footer>
-
-
+			</section>
+<!-------------------------------------APPLY NOW---------------------------------------->        
+        <button id="applynow">Apply Now</button>
+<!--------------------------------------FOOTER------------------------------------------>        
+        <footer>
+            <div id="footCont">
+                <h2> Contact</h2>
+<!--div within div for in-line positioning-->
+                <div id="footMediaLinks"> <!--footer social media links-->
+                    <a href="https://www.linkedin.com/company/npower-ny">
+                        <img src="images/png/In-2C-128px-TM.png" id="socIcon"></a>
+                    <a href="https://www.facebook.com/npower.org/">
+                        <img src="images/png/FB-f-Logo__blue_512.png" id="socIcon"></a>
+                    <a href="https://twitter.com/NPowerOrg">
+                        <img src="images/png/Twitter2.png" id="socIcon"></a>
+                    <a href="http://npowercommunityblog.tumblr.com/">
+                        <img src="images/png/tumblr_logo_blue-white-512.png" id="socIcon"></a>
+                    <a href="https://www.youtube.com/user/NPowerOrg">
+                        <img src="images/png/YouTube-social-square_red_128px.png" id="socIcon"></a>
+                    <a href="DONATE" id="donate">
+                        <img src="images/png/donate2.png" id="donateIcon"></a>
+                    <!--<svg width="120" height="70">
+                    <rect id="donateRect" width="110" height="60"> </rect>
+                    <text x="60px" y="35px" text-anchor="middle" alignment-baseline="central" id="donateText">Donate</text>
+                </svg></a>-->
+                </div>
+            </div>
+            <div id="footerLinks"> <!--footer site links-->
+                <p><small>Copyright 1999-2050 by Refsnes Data 
+                    <a class="footLinks" href="2">| Privacy Policy </a>
+                    <a class="footLinks" href="3">| Site Map </a>
+                    <a class="footLinks" href="#">| Contact Us </a>
+                </small></p>
+            </div>
+        </footer>
     </div>
-  </body>
-
+</body>
 </html>
