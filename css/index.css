@@ -179,6 +179,17 @@ animation-duration: 12s;
 	display: inherit;
 	flex-wrap: nowrap;
 }
+
+.sponsors img{
+	-webkit-filter:saturate(0);
+    filter: saturate(0)
+}
+
+.sponsors img:hover {
+	-webkit-filter:saturate(1);
+    filter: saturate(1)
+}
+
 #group1sponsors{
 	justify-content: space-between;
 	flex: 1;
@@ -232,4 +243,21 @@ animation-duration: 12s;
 		padding: 0px 5px;
 	}
    
+}
+/*--------------Apply Section----------------*/
+#applyArticle{
+display: inherit;
+	flex-wrap:nowrap;
+	flex: 1;
+	justify-content: center;
+	align-content: center;
+	margin: 20px 0;
+}
+#applyText{
+margin:auto 15px;
+}
+
+#applyIconIndex {
+	width:200px;
+	height:100px;
 }

@@ -19,7 +19,7 @@
 }
 
 .testimoniespage p{
-margin:0px 15px 20px;
+	margin:0px 15px 20px;
 }
 
 .formatTitle{
@@ -40,10 +40,6 @@ margin:0px 15px 20px;
 #nameAndTitle2 p{
 	text-align:right;
 	margin: 0 15px 20px;
-}
-
-#right{
-	float:right;
 }
 
 #bio{
