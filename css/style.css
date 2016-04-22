@@ -262,9 +262,21 @@ animation-duration: 12s;
     flex-direction: row;
     flex: 1;
     align-items: center;
-    
+  
     
 }
+
+.imagearea {
+
+}
+
+/*------ testimonies page------*/
+
+
+
+
+
+
 #LSarea{
     display: inherit;
     flex-direction: column;
@@ -316,25 +328,58 @@ animation-duration: 12s;
     flex-wrap: wrap;
     justify-content: space-between;
     flex: 1;
-    align-self: center;
-    
-    
+    align-self: center; 
+
     
 }
 
 .testimonies{
-    margin: 0% 10px;  
+    margin: 0% 10px; 
+
 }
-.testimonies img{
-    background-color: olivedrab;
-    
+
 }
+
 .testimonies h2{
     margin: 0px;
 }
 .testimonies p{
     margin: 0px;
+    padding: 3px;
+    overflow: hidden;
+    width: 350px;
+    height: 300px; 
 }
+
+
+/*------testimonies page-------- */
+
+.testimoniespage{
+					display: inherit;
+					flex-direction: row;
+					flex:1; 
+				}
+
+#testimoniespage {
+
+					display: inherit;
+					flex-direction: column;
+					flex:1; 
+					margin: 0% 10%;
+
+}
+/*
+.testimoniespage img p{
+	flex:1; 
+	   
+	    justify-content:center;
+
+}
+
+*/
+
+
+
 
 /*--------------Footer Section----------------*/
 footer{
